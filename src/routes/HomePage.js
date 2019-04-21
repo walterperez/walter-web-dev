@@ -1,10 +1,7 @@
 import React from "react";
-//Pros
 import mainPhoto from "./../img/hero.svg"
-import globeIcon from "./../img/internet.png";
-import paperPlaneIcon from "./../img/paper-plane.png";
-import chatsIcon from "./../img/chat.png";
-import paintIcon from "./../img/paint-palette.png";
+//Components
+import Pros from "./../components/Pros";
 //Projects
 import cuttingGuruProject from "./../img/cuttingguru.png";
 import walkerbarbershopProject from "./../img/walkerbarbershop.png";
@@ -26,52 +23,6 @@ function Projects() {
                     <div className="projects-description">
                         <h3>Multilingual</h3>
                         <p>Fluent in English and Spanish.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}
-
-function Pros() {
-    return (
-        <div className="pros">
-            <div className="pros-cont-containers">
-                <h2>About</h2>
-                <div className="pros-container">
-                    <div className="pros-icon">
-                        <img src={globeIcon} alt="chating icon" />
-                    </div>
-                    <div className="pros-description">
-                        <h3>Multilingual</h3>
-                        <p>Fluent in English and Spanish.</p>
-                    </div>
-                </div>
-                <div className="pros-container">
-                    <div className="pros-icon">
-                        <img src={chatsIcon} alt="chating icon" />
-                    </div>
-                    <div className="pros-description">
-                        <h3>Customer Service</h3>
-                        <p>Fluent in English and Spanish.</p>
-                    </div>
-                </div>
-                <div className="pros-container">
-                    <div className="pros-icon">
-                        <img src={paintIcon} alt="chating icon" />
-                    </div>
-                    <div className="pros-description">
-                        <h3>Natural talent for arts</h3>
-                        <p>Fluent in English and Spanish.</p>
-                    </div>
-                </div>
-                <div className="pros-container">
-                    <div className="pros-icon">
-                        <img src={paperPlaneIcon} alt="chating icon" />
-                    </div>
-                    <div className="pros-description">
-                        <h3>Afordable junior with senior skills</h3>
-                        <p>I can write front end as well back end.</p>
                     </div>
                 </div>
             </div>
