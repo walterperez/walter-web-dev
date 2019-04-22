@@ -1,37 +1,13 @@
 import React from "react";
 import mainPhoto from "./../img/hero.svg";
 import styled from "styled-components";
+import ScrollAnimation from "react-animate-on-scroll";
 //Components
 import Pros from "./../components/Pros";
-//Projects
-import cuttingGuruProject from "./../img/cuttingguru.png";
-import walkerbarbershopProject from "./../img/walkerbarbershop.png";
-import walterrepoProject from "./../img/walterrepo.png";
-import wd1ProjectProject from "./../img/wd1.png";
-import kodflixProject from "./../img/kodflix.png";
-
-function Projects() {
-  return (
-    <div className="projects">
-      <div className="projects-cont-containers">
-        <h2>Projects</h2>
-        <div className="projects-container">
-          <div className="projects-icon">
-            <img src={kodflixProject} alt="chating icon" />
-          </div>
-          <div className="projects-description">
-            <h3>Multilingual</h3>
-            <p>Fluent in English and Spanish.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+import Projects from "./../components/Projects";
 
 const HomeContainer = styled.div`
   position: relative;
-  display: flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,7 +29,7 @@ const HomeMainLetters = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 20px;
+  padding: 0 20px;
 `;
 
 const HomeTitle = styled.h1`
@@ -70,7 +46,7 @@ const HomeSubtitle = styled.h3`
   height: auto;
   text-align: start;
   font-size: 1.3rem;
-  flex: 0.5;
+  flex: 0;
   color: rgb(216, 216, 216);
   margin-top: 0.5rem;
 `;
@@ -105,11 +81,34 @@ export default function HomePage() {
     <React.Fragment>
       <HomeContainer>
         <HomeMainLetters>
-          <HomeTitle>Walter Perez</HomeTitle>
-          <HomeSubtitle>Web Developer & Graphic Designer</HomeSubtitle>
-          <HomeButtonStart>Contact now!</HomeButtonStart>
+          <ScrollAnimation
+            duration={0.5}
+            animateIn="fadeInLeftBig"
+            animateOut="fadeOut"
+            animateOnce={true}
+          >
+            <HomeTitle>Walter Perez</HomeTitle>
+          </ScrollAnimation>
+          <ScrollAnimation
+            delay={500}
+            duration={0.5}
+            animateIn="fadeInLeftBig"
+            animateOut="fadeOut"
+            animateOnce={true}
+          >
+            <HomeSubtitle>Front End Web Developer</HomeSubtitle>
+          </ScrollAnimation>
+          <ScrollAnimation
+            delay={1000}
+            duration={0.5}
+            animateIn="fadeInLeftBig"
+            animateOut="fadeOut"
+            animateOnce={true}
+          >
+            <HomeButtonStart>Contact now!</HomeButtonStart>
+          </ScrollAnimation>
         </HomeMainLetters>
-        <img className="home-mainImg" src={mainPhoto} alt="Earth planet" />
+        <HomeMainImg src={mainPhoto} alt="Earth planet" />
       </HomeContainer>
       <Pros />
       <Projects />

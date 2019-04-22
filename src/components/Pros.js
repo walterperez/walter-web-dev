@@ -6,11 +6,13 @@ import globeIcon from "./../img/internet.png";
 import paperPlaneIcon from "./../img/paper-plane.png";
 import chatsIcon from "./../img/chat.png";
 import paintIcon from "./../img/paint-palette.png";
+import TopWave from "./../img/wave.png";
 //Styles
 const ProsDiv = styled.div`
   width: 100%;
   height: auto;
-  padding: 0;
+  margin: 0 0 -4px 0;
+  padding: 0 0;
   background-color: rgb(61, 152, 209);
 `;
 
@@ -25,6 +27,14 @@ const ProsBox = styled.div`
 const ProsTitle = styled.h2`
   text-align: center;
   font-size: 2rem;
+`;
+
+const WaveImg = styled.img`
+  position: relative;
+  background: #f7f7f7;
+  width: 100%;
+  height: auto;
+  margin: 0;
 `;
 
 export default function Pros() {
@@ -53,6 +63,7 @@ export default function Pros() {
           description={"I can write front end as well back end."}
         />
       </ProsBox>
+      <WaveImg src={TopWave} alt={"wave for transition"} />
     </ProsDiv>
   );
 }
