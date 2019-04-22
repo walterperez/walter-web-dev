@@ -10,6 +10,11 @@ import walkerbarbershopProject from "./../img/walkerbarbershop.png";
 import walterrepoProject from "./../img/walterrepo.png";
 import wd1ProjectProject from "./../img/wd1.png";
 import kodflixProject from "./../img/kodflix.png";
+//Icons
+import iconHtml5 from "./../img/html5.png";
+import iconNodejs from "./../img/nodejs.png";
+import iconReact from "./../img/react.png";
+import iconCss3 from "./../img/css-3.png";
 
 const ProjectsMainDiv = styled.div`
   background-color: #f7f7f7;
@@ -32,36 +37,41 @@ export default function Projects() {
       <ProjectsContContainers>
         <ProjectTitle>Projects</ProjectTitle>
         <Project
-          icon={kodflixProject}
+          photo={kodflixProject}
           title={"Kodflix"}
+          stacks={[iconNodejs, iconReact, iconCss3]}
           description={
             "Rest full API pretending to clone Netflix, the movies are fetch from MongoAthlasDB, for the server I used express and for the frontend I used Reactjs."
           }
         />
         <Project
-          icon={walterrepoProject}
-          title={"Kodflix"}
+          photo={walterrepoProject}
+          title={"WalterRepo"}
+          stacks={[iconNodejs, iconReact, iconCss3]}
           description={
             "Rest full API pretending to clone Netflix, the movies are fetch from MongoAthlasDB, for the server I used express and for the frontend I used Reactjs."
           }
         />
         <Project
-          icon={cuttingGuruProject}
+          photo={cuttingGuruProject}
           title={"Kodflix"}
+          stacks={[iconHtml5, iconNodejs, iconReact, iconCss3]}
           description={
             "Rest full API pretending to clone Netflix, the movies are fetch from MongoAthlasDB, for the server I used express and for the frontend I used Reactjs."
           }
         />
         <Project
-          icon={walkerbarbershopProject}
+          photo={walkerbarbershopProject}
           title={"Kodflix"}
+          stacks={[iconHtml5, iconNodejs, iconReact, iconCss3]}
           description={
             "Rest full API pretending to clone Netflix, the movies are fetch from MongoAthlasDB, for the server I used express and for the frontend I used Reactjs."
           }
         />
         <Project
-          icon={wd1ProjectProject}
+          photo={wd1ProjectProject}
           title={"Kodflix"}
+          stacks={[iconHtml5, iconNodejs, iconReact, iconCss3]}
           description={
             "Rest full API pretending to clone Netflix, the movies are fetch from MongoAthlasDB, for the server I used express and for the frontend I used Reactjs."
           }
