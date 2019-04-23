@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ScrollAnimation from "react-animate-on-scroll";
 import Pro from "./Pro";
 //Images
 import globeIcon from "./../img/internet.png";
@@ -12,7 +13,7 @@ const ProsDiv = styled.div`
   width: 100%;
   height: auto;
   margin: 0 0 -4px 0;
-  padding: 0 0;
+  padding: 0 0 0 0;
   background-color: rgb(61, 152, 209);
 `;
 
@@ -26,7 +27,8 @@ const ProsBox = styled.div`
 
 const ProsTitle = styled.h2`
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
 `;
 
 const WaveImg = styled.img`
@@ -34,14 +36,34 @@ const WaveImg = styled.img`
   background: #f7f7f7;
   width: 100%;
   height: auto;
-  margin: 0;
+  margin: -5px;
+`;
+
+const UnderLine = styled.div`
+  position: absolute;
+  left: 35%;
+  width: 100px;
+  height: 10px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #b3c100, yellow);
+  z-index: 10;
 `;
 
 export default function Pros() {
   return (
     <ProsDiv>
       <ProsBox>
-        <ProsTitle>About</ProsTitle>
+        <ProsTitle>
+          About
+          <ScrollAnimation
+            duration={0.5}
+            animateIn="fadeInLeftBig"
+            animateOut="fadeOut"
+            animateOnce={true}
+          >
+            <UnderLine />
+          </ScrollAnimation>
+        </ProsTitle>
         <Pro
           icon={globeIcon}
           title={"Multilingual"}

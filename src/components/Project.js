@@ -2,10 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const ProjectContainer = styled.div`
-  margin-top: 2rem;
+  margin-top: 15%;
 `;
 const ProjectPhoto = styled.img`
-  width: 100%;
+  width:100%;
+  min-height:auto;
   height: auto;
   margin-bottom: -4px;
 `;
@@ -20,7 +21,9 @@ const Title = styled.h3`
   margin-bottom: 1rem;
 `;
 const ProjectDescription = styled.p`
-  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.2rem;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.9);
   margin-bottom:1.5rem;
 `;
 const Urls = styled.div``;
@@ -28,9 +31,11 @@ const StackUsed = styled.div``;
 const StackImg = styled.img`
   max-width: 30px;
   heigth: auto;
-  margin: 0 .5rem;
+  margin: 0 .5rem 1rem 0;
 `;
-const GitHub = styled.a``;
+const GitHub = styled.a`
+  margin-right: 1rem;
+`;
 const Demo = styled.a``;
 
 export default function Project({ photo, title, description, stacks }) {
@@ -48,7 +53,7 @@ export default function Project({ photo, title, description, stacks }) {
             : null}
         </StackUsed>
         <Urls>
-          <GitHub href={"http://www.github.com"}>Code</GitHub>
+          <GitHub href={"http://www.github.com"}>GitHub</GitHub>
           <Demo href={"#"}>Demo</Demo>
         </Urls>
       </Description>
