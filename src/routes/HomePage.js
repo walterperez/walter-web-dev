@@ -5,6 +5,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 //Components
 import Pros from "./../components/Pros";
 import Projects from "./../components/Projects";
+import Footer from "./../components/Footer"
 
 const HomeContainer = styled.div`
   position: relative;
@@ -112,6 +113,7 @@ export default function HomePage() {
       </HomeContainer>
       <Pros />
       <Projects />
+      <Footer />
     </React.Fragment>
   );
 }

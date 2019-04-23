@@ -27,7 +27,7 @@ const ProjectsMainDiv = styled.div`
 const ProjectsContContainers = styled.div`
   margin: 0;
   padding: 0 5%;
-  background: linear-gradient(#b3c100,#b3b100);
+  background: linear-gradient(#b3c100,#68C300);
   padding: 0 5% 10% 5%;
 `;
 
