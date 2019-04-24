@@ -16,10 +16,26 @@ const ContactButtonsDiv = styled.div`
 
 const Link = styled.a`
   flex: 1;
-  max-width: 25%;
+  max-width: 20%;
   height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
   &:nth-child(1) {
     margin: 0 20px 0 0;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 100, 200, 0.3);
+    z-index: 100;
+  }
+  &:hover {
+    cursor: pointer;
   }
 `;
 

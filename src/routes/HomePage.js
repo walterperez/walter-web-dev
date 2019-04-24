@@ -5,8 +5,9 @@ import ScrollAnimation from "react-animate-on-scroll";
 //Components
 import Pros from "./../components/Pros";
 import Projects from "./../components/Projects";
-import Footer from "./../components/Footer"
+import Footer from "./../components/Footer";
 import ContactButtons from "../components/ContactButtons";
+import waveBackground from "./../img/waveBackground2.png";
 
 const HomeContainer = styled.div`
   position: relative;
@@ -20,8 +21,22 @@ const HomeContainer = styled.div`
   padding: 0;
   margin: 0;
   overflow: hidden;
-  background: linear-gradient(#4cb5f5, rgb(61, 152, 209));
+  &:before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: url(${waveBackground}) center center/2000px 1400px no-repeat
+        scroll,
+      linear-gradient(#4cb5f5, rgb(61, 152, 209));
+    -webkit-transform: rotate(30deg);
+    transform: rotate(-10deg);
+  }
 `;
+//  background: linear-gradient(#4cb5f5, rgb(61, 152, 209));
 
 const HomeMainLetters = styled.div`
   flex: 1;
@@ -49,7 +64,7 @@ const HomeSubtitle = styled.h3`
   text-align: start;
   font-size: 1.3rem;
   flex: 0;
-  color: rgb(216, 216, 216);
+  color: rgb(226, 226, 226);
   margin-top: 0.5rem;
 `;
 
@@ -117,7 +132,7 @@ export default function HomePage() {
             animateOut="fadeOut"
             animateOnce={true}
           >
-            <ContactButtons/>
+            <ContactButtons />
           </ScrollAnimation>
         </HomeMainLetters>
         <HomeMainImg src={mainPhoto} alt="Main Img" />
