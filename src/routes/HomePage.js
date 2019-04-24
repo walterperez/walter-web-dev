@@ -6,6 +6,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import Pros from "./../components/Pros";
 import Projects from "./../components/Projects";
 import Footer from "./../components/Footer"
+import ContactButtons from "../components/ContactButtons";
 
 const HomeContainer = styled.div`
   position: relative;
@@ -108,8 +109,18 @@ export default function HomePage() {
           >
             <HomeButtonStart>Contact now!</HomeButtonStart>
           </ScrollAnimation>
+
+          <ScrollAnimation
+            delay={1500}
+            duration={0.5}
+            animateIn="fadeInLeftBig"
+            animateOut="fadeOut"
+            animateOnce={true}
+          >
+            <ContactButtons/>
+          </ScrollAnimation>
         </HomeMainLetters>
-        <HomeMainImg src={mainPhoto} alt="Earth planet" />
+        <HomeMainImg src={mainPhoto} alt="Main Img" />
       </HomeContainer>
       <Pros />
       <Projects />
