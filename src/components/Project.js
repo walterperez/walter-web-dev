@@ -9,9 +9,7 @@ const ProjectContainer = styled.div`
     box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.3);
   }
   @media (min-width: 401px) {
-    &:nth-child(even) {
-      margin-right: 5%;
-    }
+    margin-top: 10%;
   }
 `;
 const ProjectPhoto = styled.img`
@@ -40,7 +38,7 @@ const Urls = styled.div``;
 const StackUsed = styled.div``;
 const StackImg = styled.img`
   max-width: 30px;
-  heigth: auto;
+  height: auto;
   margin: 0 0.5rem 1rem 0;
 `;
 const GitHub = styled.a`
@@ -50,12 +48,7 @@ const Demo = styled.a``;
 
 export default function Project({ photo, title, description, stacks }) {
   return (
-    <ScrollAnimation
-      duration={0.5}
-      animateIn="fadeInLeftBig"
-      animateOut="fadeOut"
-      animateOnce={true}
-    >
+    <ScrollAnimation duration={0.5} animateIn="fadeIn" animateOnce={true}>
       <ProjectContainer>
         <ProjectPhoto src={photo} alt={title} />
         <Description>

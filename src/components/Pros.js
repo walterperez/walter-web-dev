@@ -45,7 +45,7 @@ height: auto;
 `;
 
 const WaveImg = styled.img`
-  min-width: 100vw;
+  min-width: 100%;
   position: relative;
   background: #f7f7f7;
   height: auto;
@@ -69,7 +69,7 @@ export default function Pros() {
           About
           <ScrollAnimation
             duration={0.5}
-            animateIn="fadeInLeftBig"
+            animateIn="fadeIn"
             animateOut="fadeOut"
             animateOnce={true}
           >
@@ -85,17 +85,21 @@ export default function Pros() {
           <Pro
             icon={chatsIcon}
             title={"Customer Service"}
-            description={"Fluent in English and Spanish."}
+            description={"Over a half-decade providing an excellent service."}
           />
           <Pro
             icon={paintIcon}
             title={"Natural talent for arts"}
-            description={"Fluent in English and Spanish."}
+            description={
+              "I draw, paint, and take photos in my free time, so I have a special eye for creating beautiful UI."
+            }
           />
           <Pro
             icon={paperPlaneIcon}
-            title={"Afordable junior with senior skills"}
-            description={"I can write front end as well back end."}
+            title={"Excellent problem solver"}
+            description={
+              "I love solving new problems and sharing Knowledge about how to improve the already done ones."
+            }
           />
         </ProsContainer>
       </ProsBox>

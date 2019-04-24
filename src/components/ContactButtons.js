@@ -26,6 +26,8 @@ const Link = styled.a`
   }
   &:after {
     content: "";
+    margin: 0;
+    padding: 0;
     position: absolute;
     left: 0;
     top: 0;
@@ -36,12 +38,17 @@ const Link = styled.a`
   }
   &:hover {
     cursor: pointer;
+    &:after {
+      background: rgba(100, 200, 100, 0.3);
+    }
   }
 `;
 
 const Icon = styled.img`
   max-width: 100px
   height:auto;
+  margin: 0;
+  padding: 0;
 `;
 
 export default function ContactButtons() {

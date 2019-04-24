@@ -18,6 +18,7 @@ import iconJs from "./../img/js.png";
 import iconRedux from "./../img/redux.png";
 import iconWordpress from "./../img/wordpress.png";
 import iconSass from "./../img/sass.jpg";
+import iconMongoDB from "./../img/mongodb.png";
 
 const ProjectsMainDiv = styled.div`
   background-color: #f7f7f7;
@@ -27,7 +28,7 @@ const ProjectsContContainers = styled.div`
   margin: 0;
   padding: 0 5%;
   background: linear-gradient(#b3c100, #68c300);
-  padding: 0 5% 10% 5%;
+  padding: 0 5% 5% 5%;
 `;
 
 const ProjectTitle = styled.h2`
@@ -55,7 +56,7 @@ const UnderLine = styled.div`
   width: 100px;
   height: 10px;
   border-radius: 10px;
-  background: linear-gradient(to right, #4cb5f5, #e1e1e1);
+  background: linear-gradient(to right, #4cb5f5, #9fd7f9);
   z-index: 10;
 `;
 
@@ -78,7 +79,7 @@ export default function Projects() {
           <Project
             photo={kodflixProject}
             title={"Kodflix"}
-            stacks={[iconReact, iconRedux, iconNodejs, iconCss3]}
+            stacks={[iconReact, iconNodejs, iconMongoDB, iconCss3, iconJs]}
             description={
               "Rest full API pretending to clone Netflix, the movies are fetch from MongoAthlasDB, for the server I used express and for the frontend I used Reactjs."
             }
@@ -86,33 +87,33 @@ export default function Projects() {
           <Project
             photo={walterrepoProject}
             title={"WalterRepo"}
-            stacks={[iconReact, iconRedux, iconNodejs, iconSass]}
+            stacks={[iconReact, iconRedux, iconNodejs, iconSass, iconJs]}
             description={
-              "Rest full API pretending to clone Netflix, the movies are fetch from MongoAthlasDB, for the server I used express and for the frontend I used Reactjs."
+              "This used to be my portfolio, It was the first time I ever used React, I also manage to learn how to use redux when I made it."
             }
           />
           <Project
             photo={cuttingGuruProject}
-            title={"Kodflix"}
+            title={"Cutting Guru"}
             stacks={[iconWordpress, iconCss3]}
             description={
-              "Rest full API pretending to clone Netflix, the movies are fetch from MongoAthlasDB, for the server I used express and for the frontend I used Reactjs."
+              "This was a project for a hairdresser salon in London, the owner wanted to keep the website with updates and have the total control of the website, so I decide to use Wordpress for this."
             }
           />
           <Project
             photo={walkerbarbershopProject}
-            title={"Kodflix"}
+            title={"Walker Barbershop"}
             stacks={[iconHtml5, iconCss3, iconJs]}
             description={
-              "Rest full API pretending to clone Netflix, the movies are fetch from MongoAthlasDB, for the server I used express and for the frontend I used Reactjs."
+              "This was the first project I ever made with flat HTML5, CSS3 and a bit of Javascript, it was for a barbershop owner in Spain, the owner just wanted a flat website and he was not really interested in update it."
             }
           />
           <Project
             photo={wd1ProjectProject}
-            title={"Kodflix"}
+            title={"Walter Designs"}
             stacks={[iconHtml5, iconCss3, iconJs]}
             description={
-              "Rest full API pretending to clone Netflix, the movies are fetch from MongoAthlasDB, for the server I used express and for the frontend I used Reactjs."
+              "This was going to be my first website when I just knew HTML and CSS3."
             }
           />
         </GridForProjects>

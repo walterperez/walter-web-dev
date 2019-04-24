@@ -41,6 +41,7 @@ export default function Pro({ icon, title, description }) {
       duration={0.5}
       animateIn="fadeInLeftBig"
       animateOut="fadeOut"
+      animateOnce={true}
     >
       <ProContainer>
         <ProIcon>

@@ -65,7 +65,7 @@ const HomeTitle = styled.h1`
   font-size: 2.5rem;
   color: aliceblue;
   @media (min-width: 801px) {
-    font-size: 3 0.5rem;
+    font-size: 3.5rem;
   }
 `;
 
@@ -75,7 +75,7 @@ const HomeSubtitle = styled.h3`
   text-align: start;
   font-size: 1.3rem;
   flex: 0;
-  color: rgb(226, 226, 226);
+  color: rgba(226, 226, 226, 0.8);
   margin-top: 0.5rem;
   @media (min-width: 801px) {
     font-size: 2rem;
