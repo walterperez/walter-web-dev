@@ -29,11 +29,18 @@ const HomeContainer = styled.div`
     top: -50%;
     left: -50%;
     z-index: -1;
-    background: url(${waveBackground}) center center/2000px 1400px no-repeat
-        scroll,
-      linear-gradient(#4cb5f5, rgb(61, 152, 209));
+    background: url(${waveBackground}) center center/1500px 1600px no-repeat,
+      linear-gradient(30deg, #4cb5f5 0%, #0a6ca9 50%, #063e60 99%);
     -webkit-transform: rotate(30deg);
     transform: rotate(-10deg);
+  }
+  @media (min-width: 801px) {
+    flex-direction: row;
+
+    &:before {
+      background: url(${waveBackground}) center center/3000px 2000px no-repeat,
+        linear-gradient(30deg, #4cb5f5 0%, #0a6ca9 50%, #063e60 99%);
+    }
   }
 `;
 //  background: linear-gradient(#4cb5f5, rgb(61, 152, 209));
@@ -41,6 +48,7 @@ const HomeContainer = styled.div`
 const HomeMainLetters = styled.div`
   flex: 1;
   width: 100%;
+  min-height: 300px;
   color: rgb(92, 69, 22);
   display: flex;
   flex-direction: column;
@@ -56,6 +64,9 @@ const HomeTitle = styled.h1`
   text-align: start;
   font-size: 2.5rem;
   color: aliceblue;
+  @media (min-width: 801px) {
+    font-size: 3 0.5rem;
+  }
 `;
 
 const HomeSubtitle = styled.h3`
@@ -66,6 +77,9 @@ const HomeSubtitle = styled.h3`
   flex: 0;
   color: rgb(226, 226, 226);
   margin-top: 0.5rem;
+  @media (min-width: 801px) {
+    font-size: 2rem;
+  }
 `;
 
 const HomeButtonStart = styled.button`

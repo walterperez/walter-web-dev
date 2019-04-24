@@ -3,10 +3,15 @@ import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const ProjectContainer = styled.div`
-  margin-top: 15%;
+  margin-top: 5%;
   transition: all 0.2s ease-in;
   &:hover {
     box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.3);
+  }
+  @media (min-width: 401px) {
+    &:nth-child(even) {
+      margin-right: 5%;
+    }
   }
 `;
 const ProjectPhoto = styled.img`
