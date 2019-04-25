@@ -1,5 +1,4 @@
 import React from "react";
-import mainPhoto from "./../img/hero.svg";
 import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
 //Components
@@ -7,6 +6,8 @@ import Pros from "./../components/Pros";
 import Projects from "./../components/Projects";
 import Footer from "./../components/Footer";
 import ContactButtons from "../components/ContactButtons";
+//Img
+import mainPhoto from "./../img/hero.svg";
 import waveBackground from "./../img/waveBackground2.png";
 
 const HomeContainer = styled.div`
@@ -105,6 +106,10 @@ const HomeMainImg = styled.img`
   flex: 1;
   width: 100%;
   height: 100%;
+  @media (min-width: 1201px) {
+    max-width: 50%;
+    max-height: 100%;
+  }
 `;
 
 export default function HomePage() {
