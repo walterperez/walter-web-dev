@@ -2,7 +2,8 @@
   "name": "walterwebdev",
   "version": "0.1.0",
   "engines": {
-    "node": "11.3.0"
+    "node": "11.3.0",
+    "npm": "6.4.1"
   },
   "private": true,
   "dependencies": {
