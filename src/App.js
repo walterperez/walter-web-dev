@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //CSS
-import './App.css';
+import "./App.css";
 //Components
-import Header from "./components/Header";
+import Header from "./components/HeaderMain";
 //Routes
-import Home from "./routes/HomePage"
-import About from "./routes/About"
-import MyProjecs from "./routes/MyProjects"
-import Tools from "./routes/Tools"
-import Services from "./routes/Services"
-import Contact from "./routes/Contact"
-import Legal from "./routes/Legal"
-import BrandDesigns from "./routes/BrandDesigns"
+import Home from "./routes/HomePage";
+import About from "./routes/About";
+import MyProjecs from "./routes/MyProjects";
+import Tools from "./routes/Tools";
+import Services from "./routes/Services";
+import Contact from "./routes/Contact";
+import Legal from "./routes/Legal";
+import BrandDesigns from "./routes/BrandDesigns";
 
 class App extends Component {
   render() {

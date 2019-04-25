@@ -4,7 +4,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 //Components
 import Pros from "./../components/Pros";
 import Projects from "./../components/Projects";
-import Footer from "./../components/Footer";
+import Footer from "./../components/FooterMain";
 import ContactButtons from "../components/ContactButtons";
 //Img
 import mainPhoto from "./../img/hero.svg";
