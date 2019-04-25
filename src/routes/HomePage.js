@@ -37,7 +37,7 @@ const HomeContainer = styled.div`
   }
   @media (min-width: 801px) {
     flex-direction: row;
-
+    padding: 0 10%;
     &:before {
       background: url(${waveBackground}) center center/3000px 2000px no-repeat,
         linear-gradient(30deg, #4cb5f5 0%, #0a6ca9 50%, #063e60 99%);
