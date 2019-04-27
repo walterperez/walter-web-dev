@@ -38,3 +38,7 @@ img {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(#559e01, rgb(64, 119, 0));
 }
+
+.home {
+  padding: 300px;
+}

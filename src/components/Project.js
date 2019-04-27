@@ -7,6 +7,7 @@ const ProjectContainer = styled.div`
   width: 100%;
   height: 100%;
   max-height: 600px;
+  margin-bottom: 1em;
   background: rgba(194, 209, 115, 0.8);
   &:hover {
     box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.3);

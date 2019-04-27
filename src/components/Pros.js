@@ -86,7 +86,7 @@ export default function Pros() {
           <Pro
             icon={chatsIcon}
             title={"Customer Service"}
-            description={"Over a half-decade providing an excellent service."}
+            description={"Over a half-decade providing an excellent service. "}
           />
           <Pro
             icon={paintIcon}
@@ -99,7 +99,7 @@ export default function Pros() {
             icon={paperPlaneIcon}
             title={"Excellent problem solver"}
             description={
-              "I love solving new problems and sharing Knowledge about how to improve the already done ones."
+              "I love solving new problems and sharing Knowledge about how to improve the already solved problems."
             }
           />
         </ProsContainer>

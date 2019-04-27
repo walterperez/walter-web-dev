@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import GithubIcon from "./../img/github.png";
-import LinkedInIcon from "./../img/linkedin.png";
+import GithubIcon from "./../img/github-logo.svg";
+import LinkedInIcon from "./../img/linkedin.svg";
 
 const ContactButtonsDiv = styled.div`
   width: 100%;
@@ -24,31 +24,24 @@ const Link = styled.a`
   &:nth-child(1) {
     margin: 0 20px 0 0;
   }
-  &:after {
-    content: "";
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(100, 100, 200, 0.3);
-    z-index: 100;
-  }
   &:hover {
     cursor: pointer;
-    &:after {
-      background: rgba(100, 200, 100, 0.3);
-    }
   }
 `;
 
 const Icon = styled.img`
-  max-width: 100px
-  height:auto;
+  width: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.2);
+  height: auto;
   margin: 0;
   padding: 0;
+  margin-right: 2em;
+  &:hover {
+    background-color: rgba(250, 250, 250, 0.8);
+    box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.5);
+  }
 `;
 
 export default function ContactButtons() {

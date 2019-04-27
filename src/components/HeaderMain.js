@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 //Images
 import logo from "./../logo.svg";
@@ -16,6 +17,7 @@ const HeaderMainDiv = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.2);
 `;
 
 const HeaderHamburger = styled.div`
@@ -70,7 +72,16 @@ export default class Header extends Component {
 
   handleHamburgerClick() {
     this.setState({
-      listLinks: ["Home", "About", "Projects", "Designs", "Contact"],
+      listLinks: [
+        { name: "Home", route: "/" },
+        { name: "About", route: "/about" },
+        { name: "Projects", route: "/myprojecs" },
+        { name: "Designs", route: "/brandDesigns" },
+        { name: "Contact", route: "/contact" },
+        { name: "Tools", route: "/tools" },
+        { name: "Services", route: "/services" },
+        { name: "Legal", route: "/legal" }
+      ],
       isActive: !this.state.isActive
     });
   }
@@ -93,11 +104,13 @@ export default class Header extends Component {
         </HeaderMainDiv>,
         <MenuHamburger>
           <MenuHamburgerList>
-            {this.state.listLinks.map(link => {
+            {this.state.listLinks.map((link, index) => {
               return (
-                <MenuHamburgerListElment key={link}>
-                  {link}
-                </MenuHamburgerListElment>
+                <Link to={link.route} style={{ textDecoration: "none" }}>
+                  <MenuHamburgerListElment key={link.name + index}>
+                    {link.name}
+                  </MenuHamburgerListElment>
+                </Link>
               );
             })}
           </MenuHamburgerList>
