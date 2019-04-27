@@ -31,7 +31,7 @@ const HomeContainer = styled.div`
     left: -50%;
     z-index: -1;
     background: url(${waveBackground}) center center/1500px 1600px no-repeat,
-      linear-gradient(30deg, #4cb5f5 0%, #0a6ca9 50%, #063e60 99%);
+      linear-gradient(to right, #007cc2 0%, #0e70ae 100%);
     -webkit-transform: rotate(30deg);
     transform: rotate(-10deg);
   }
@@ -40,7 +40,7 @@ const HomeContainer = styled.div`
     padding: 0 10%;
     &:before {
       background: url(${waveBackground}) center center/3000px 2000px no-repeat,
-        linear-gradient(30deg, #4cb5f5 0%, #0a6ca9 50%, #063e60 99%);
+        linear-gradient(to right, #007cc2 0%, #0e70ae 100%);
     }
   }
 `;
@@ -50,50 +50,40 @@ const HomeMainLetters = styled.div`
   flex: 1;
   width: 100%;
   min-height: 300px;
-  color: rgb(92, 69, 22);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  text-align: start;
+  padding: 0 3em;
 `;
 
 const HomeTitle = styled.h1`
   flex: 0;
   width: 100%;
   height: auto;
-  text-align: start;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   color: aliceblue;
-  @media (min-width: 801px) {
-    font-size: 3.5rem;
-  }
+  margin-bottom: 0.5rem;
 `;
 
 const HomeSubtitle = styled.h3`
   width: 100%;
   height: auto;
-  text-align: start;
-  font-size: 1.3rem;
+  font-size: 1.5em;
   flex: 0;
   color: rgba(226, 226, 226, 0.8);
-  margin-top: 0.5rem;
-  @media (min-width: 801px) {
-    font-size: 2rem;
-  }
+  margin-bottom: 0.5rem;
 `;
 
 const HomeButtonStart = styled.button`
   flex: 1;
-  font-size: 1.2rem;
+  font-size: 1em;
   color: rgb(254, 255, 255);
   background-color: #b3c100;
   border: 0;
-  max-width: 200px;
-  max-height: 100px;
-  border-radius: 10px;
-  padding: 20px 40px;
-  margin-top: 1rem;
+  border-radius: 5px;
+  padding: 1em 3em;
   transition: all 0.2s ease-in;
   &:hover {
     background: linear-gradient(#b3c100, #9aa500);

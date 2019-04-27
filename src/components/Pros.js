@@ -14,12 +14,12 @@ const ProsDiv = styled.div`
   height: auto;
   margin: 0 0 -4px 0;
   padding: 0 0 0 0;
-  background-color: rgb(61, 152, 209);
+  background: linear-gradient(to right, #007cc2 0%, #0e70ae 100%);
 `;
 
 const ProsBox = styled.div`
   background-color: #f7f7f7;
-  padding: 30px;
+  padding: 3em 5em;
   width: 100%;
   height: auto;
   border-radius: 50px 50px 0 0;
@@ -31,8 +31,9 @@ const ProsTitle = styled.h2`
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 2rem;
 `;
 
 const ProsContainer = styled.div`

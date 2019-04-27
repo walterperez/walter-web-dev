@@ -3,10 +3,14 @@ import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const ProjectContainer = styled.div`
-  margin-top: 5%;
-  transition: all 0.2s ease-in;
+  transition: all 0.3s ease-in;
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  background: rgba(194, 209, 115, 0.8);
   &:hover {
     box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.3);
+    background: rgba(194, 209, 115);
   }
   @media (min-width: 401px) {
     margin-top: 10%;
@@ -20,18 +24,20 @@ const ProjectPhoto = styled.img`
 `;
 const Description = styled.div`
   padding: 10px 20px;
-  background: rgba(250, 250, 250, 0.5);
 `;
 const Title = styled.h3`
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.3rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 `;
 const ProjectDescription = styled.p`
-  font-size: 1.2rem;
-  line-height: 2;
-  color: rgba(0, 0, 0, 0.9);
+  font-size: 1rem;
+  overflow-y: scroll;
+  padding: 0.5em 1em;
+  height: 100%;
+  min-heigth: 100%;
+  color: rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
 `;
 const Urls = styled.div``;

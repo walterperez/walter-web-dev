@@ -9,21 +9,18 @@ const HeaderMainDiv = styled.header`
   top: 0;
   z-index: 10;
   width: 100%;
-  padding: 0 5%;
+  padding: 0.1em 1.5em;
   background-color: hsl(203, 89%, 63%);
-  height: 80px;
+  height: 3em;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 `;
 
 const HeaderHamburger = styled.div`
-  flex: 1;
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 1.5em;
+  max-height: 1.5em;
   cursor: pointer;
 `;
 
@@ -31,13 +28,14 @@ const HamburgerIcon = styled.img``;
 
 const HeaderLogo = styled.img`
   flex: 1;
-  height: 50px;
+  width: 1.5em;
+  height: 1.5em;
   pointer-events: none;
 `;
 
 const MenuHamburger = styled.div`
   position: fixed;
-  top: 80px;
+  top: 3em;
   left: 0;
   width: 20%;
   height: 100%;
@@ -53,7 +51,7 @@ const MenuHamburgerList = styled.ul`
 `;
 const MenuHamburgerListElment = styled.li`
   display: block;
-  padding: 1rem 16px;
+  padding: 0.5em 1em;
   text-decoration: none;
   &:hover {
     background-color: #0d8bd9;

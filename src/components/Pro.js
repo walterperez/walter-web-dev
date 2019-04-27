@@ -4,13 +4,12 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 //Styles
 const ProContainer = styled.div`
-  margin-top: 10%;
-  padding: 10px;
+  padding: 0.5em 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 0;
   transition: all 0.5s ease-in;
   &:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
@@ -23,15 +22,18 @@ const ProIcon = styled.div`
 `;
 
 const ProDescription = styled.div`
-  margin-top: 15px;
+  margin-bottom: 1em;
 `;
 
 const ProTitle = styled.h3`
   text-align: center;
+  font-size: 1.2em;
   color: rgb(82, 79, 79);
+  margin-bottom: 1em;
 `;
 
 const ProSubtitle = styled.h3`
+  font-size: 1em;
   color: rgb(155, 153, 153);
 `;
 

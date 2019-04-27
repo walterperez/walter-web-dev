@@ -37,15 +37,17 @@ const ProjectTitle = styled.h2`
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: rgba(0, 0, 0, 0.8);
   margin: 0;
+  margin-bottom: 2rem;
 `;
 
 const GridForProjects = styled.div`
   @media (min-width: 401px) {
     display: grid;
-    column-gap: 5%;
+    column-gap: 3rem;
+    row-gap: 3rem;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 `;

@@ -16,14 +16,14 @@ const FooterDiv = styled.div`
 
 const Copyrights = styled.p`
     flex:1
-    font-size:1.1rem;
+    font-size:1em;
     font-weight:bold;
 `;
 
 export default function Footer() {
   return (
     <FooterDiv>
-      <Copyrights>Copyrights 2019 &copy; WalterWebDev </Copyrights>
+      <Copyrights>© Designed by WalterWebDev | All rights reserved</Copyrights>
     </FooterDiv>
   );
 }
