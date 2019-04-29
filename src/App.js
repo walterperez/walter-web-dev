@@ -6,13 +6,13 @@ import "./App.css";
 import Header from "./components/HeaderMain";
 //Routes
 import Home from "./routes/HomePage";
-import About from "./routes/About";
-import MyProjecs from "./routes/MyProjects";
-import Tools from "./routes/Tools";
-import Services from "./routes/Services";
-import Contact from "./routes/Contact";
-import Legal from "./routes/Legal";
-import BrandDesigns from "./routes/BrandDesigns";
+import About from "./routes/AboutPage";
+import MyProjecs from "./routes/MyProjectsPage";
+import Tools from "./routes/ToolsPage";
+import Services from "./routes/ServicesPage";
+import Contact from "./routes/ContactPage";
+import Legal from "./routes/LegalPage";
+import BrandDesigns from "./routes/BrandDesignsPage";
 
 class App extends Component {
   render() {

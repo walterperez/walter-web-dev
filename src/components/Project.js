@@ -37,7 +37,7 @@ const ProjectDescription = styled.p`
   overflow-y: scroll;
   padding: 0.5em 1em;
   height: 100%;
-  min-heigth: 100%;
+  min-heigh: 100%;
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
 `;
