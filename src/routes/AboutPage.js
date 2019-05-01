@@ -9,14 +9,14 @@ const MainDivAbout = styled.div`
   min-height: 100vh;
   background-color: #4db4f5;
   background-image: linear-gradient(
-    1450deg,
+    to right bottom,
     rgba(0, 0, 0, 0.05),
-    rgba(0, 0, 0, 0.3 5)
+    rgba(0, 0, 0, 0.35)
   );
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10em 2em;
+  padding: 10em 2em 5em 2em;
 `;
 
 const MainContainer = styled.div`
