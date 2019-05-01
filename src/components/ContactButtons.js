@@ -2,8 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import GithubIcon from "./../img/github-logo.svg";
 import LinkedInIcon from "./../img/linkedin.svg";
+import MailIcon from "./../img/mail.svg";
 
 const ContactButtonsDiv = styled.div`
+  flex: 1;
   width: 100%;
   max-width: 200px;
   height: auto;
@@ -11,7 +13,7 @@ const ContactButtonsDiv = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  margin: 2em;
 `;
 
 const Link = styled.a`
@@ -22,7 +24,10 @@ const Link = styled.a`
   padding: 0;
   position: relative;
   &:nth-child(1) {
-    margin: 0 20px 0 0;
+    margin: 0 0.5em 0 0;
+  }
+  &:nth-child(2) {
+    margin: 0 0.5em 0 0;
   }
   &:hover {
     cursor: pointer;
@@ -47,11 +52,18 @@ const Icon = styled.img`
 export default function ContactButtons() {
   return (
     <ContactButtonsDiv>
-      <Link href={""}>
+      <Link href={"https://github.com/walterperez"} target="_blank">
         <Icon src={GithubIcon} />
       </Link>
-      <Link href={""}>
+      <Link
+        href={
+          "https://www.linkedin.com/in/walter-christian-perez-hernandez-0730a9184/"
+        }
+      >
         <Icon src={LinkedInIcon} />
+      </Link>
+      <Link href={"mailto:walter_cph93@outlook.com"} target="_blank">
+        <Icon src={MailIcon} />
       </Link>
     </ContactButtonsDiv>
   );

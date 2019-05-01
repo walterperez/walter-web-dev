@@ -5,29 +5,45 @@ import ScrollAnimation from "react-animate-on-scroll";
 const ProjectContainer = styled.div`
   transition: all 0.3s ease-in;
   width: 100%;
-  height: 100%;
   max-height: 600px;
   margin-bottom: 1em;
-  background: rgba(194, 209, 115, 0.8);
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  background: rgba(250, 250, 250, 0.8);
+  font-weight: 800;
+  padding: 0 0 2em 0;
   &:hover {
     box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.3);
-    background: rgba(194, 209, 115);
+    background: #f9f9f9;
   }
   @media (min-width: 401px) {
     margin-top: 10%;
   }
 `;
+const ProjectPhotoContainer = styled.div`
+  flex: 1;
+  width: 100%;
+  min-height: 50%;
+`;
 const ProjectPhoto = styled.img`
   width: 100%;
-  min-height: auto;
-  height: auto;
-  margin-bottom: -4px;
+  height: 100%;
 `;
 const Description = styled.div`
+  flex: 1;
   padding: 10px 20px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 const Title = styled.h3`
-  color: rgba(0, 0, 0, 0.7);
+  color: #0578b8;
   font-size: 1.3rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -50,14 +66,35 @@ const StackImg = styled.img`
 `;
 const GitHub = styled.a`
   margin-right: 1rem;
+  text-decoration: none;
+  color: green;
+  &:hover {
+    color: #08db08;
+  }
 `;
-const Demo = styled.a``;
+const Demo = styled.a`
+  text-decoration: none;
+  color: green;
+  &:hover {
+    color: #08db08;
+  }
+`;
 
-export default function Project({ photo, title, description, stacks }) {
+export default function Project({
+  photo,
+  title,
+  description,
+  stacks,
+  git,
+  url
+}) {
   return (
     <ScrollAnimation duration={0.5} animateIn="fadeIn" animateOnce={true}>
       <ProjectContainer>
-        <ProjectPhoto src={photo} alt={title} />
+        <ProjectPhotoContainer>
+          <ProjectPhoto src={photo} alt={title} />
+        </ProjectPhotoContainer>
+
         <Description>
           <Title>{title}</Title>
           <ProjectDescription>{description}</ProjectDescription>
@@ -71,8 +108,12 @@ export default function Project({ photo, title, description, stacks }) {
               : null}
           </StackUsed>
           <Urls>
-            <GitHub href={"http://www.github.com"}>GitHub</GitHub>
-            <Demo href={"#"}>Demo</Demo>
+            <GitHub href={git} target="_blank">
+              GitHub
+            </GitHub>
+            <Demo href={url} target="_blank">
+              Demo
+            </Demo>
           </Urls>
         </Description>
       </ProjectContainer>

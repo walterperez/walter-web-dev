@@ -31,9 +31,11 @@ const ProsTitle = styled.h2`
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2rem;
   color: rgba(0, 0, 0, 0.8);
   margin-bottom: 2rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 `;
 
 const ProsContainer = styled.div`
@@ -56,7 +58,7 @@ const WaveImg = styled.img`
 const UnderLine = styled.div`
   position: relative;
   width: 100px;
-  height: 10px;
+  height: 5px;
   border-radius: 10px;
   background: linear-gradient(to right, #b3c100, yellow);
   z-index: 10;
@@ -99,7 +101,7 @@ export default function Pros() {
             icon={paperPlaneIcon}
             title={"Excellent problem solver"}
             description={
-              "I love solving new problems and sharing Knowledge about how to improve the already solved problems."
+              "I love solving new problems and sharing knowledge to find new possible solutions to improve the problems already solve."
             }
           />
         </ProsContainer>

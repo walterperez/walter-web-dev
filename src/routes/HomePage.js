@@ -9,6 +9,7 @@ import ContactButtons from "../components/ContactButtons";
 //Img
 import mainPhoto from "./../img/hero.svg";
 import waveBackground from "./../img/waveBackground2.png";
+import paperPlaneIcon from "./../img/sent-mail.svg";
 
 const HomeContainer = styled.div`
   position: relative;
@@ -73,17 +74,19 @@ const HomeSubtitle = styled.h3`
   font-size: 1.5em;
   flex: 0;
   color: rgba(226, 226, 226, 0.8);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1em;
 `;
 
-const HomeButtonStart = styled.button`
+const HomeButtonStart = styled.a`
   flex: 1;
   font-size: 1em;
   color: rgb(254, 255, 255);
   background-color: #b3c100;
+  text-decoration: none;
   border: 0;
   border-radius: 5px;
   padding: 1em 3em;
+  margin-bottom: 1em;
   transition: all 0.2s ease-in;
   &:hover {
     background: linear-gradient(#b3c100, #9aa500);
@@ -92,10 +95,15 @@ const HomeButtonStart = styled.button`
   }
 `;
 
+const PaperIcon = styled.img`
+  width: 1rem;
+  height: 1rem;
+`;
+
 const HomeMainImg = styled.img`
   flex: 1;
   width: 100%;
-  height: 100%;
+  height: auto;
   @media (min-width: 1201px) {
     max-width: 50%;
     max-height: 100%;
@@ -131,7 +139,9 @@ export default function HomePage() {
             animateOut="fadeOut"
             animateOnce={true}
           >
-            <HomeButtonStart>Contact now!</HomeButtonStart>
+            <HomeButtonStart href={"mailto:walter_cph93@outlook.com"}>
+              Contact now! <PaperIcon src={paperPlaneIcon} />
+            </HomeButtonStart>
           </ScrollAnimation>
 
           <ScrollAnimation

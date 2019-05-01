@@ -6,13 +6,15 @@ import ScrollAnimation from "react-animate-on-scroll";
 const ProContainer = styled.div`
   padding: 0.5em 1em;
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 0;
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
   &:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
   }
 `;
 

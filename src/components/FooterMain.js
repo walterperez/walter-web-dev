@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import ContactButtons from "./ContactButtons";
 
 const FooterDiv = styled.div`
   width: 100%;
-  heigth: auto;
   margin: 0;
-  padding: 10% 10%;
+  padding: 3em 3em;
   background-color: rgba(0, 0, 0, 0.9);
-  color: green;
+  color: #0578b8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,6 +23,7 @@ const Copyrights = styled.p`
 export default function Footer() {
   return (
     <FooterDiv>
+      <ContactButtons />
       <Copyrights>© Designed by WalterWebDev | All rights reserved</Copyrights>
     </FooterDiv>
   );
