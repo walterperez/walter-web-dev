@@ -67,7 +67,7 @@ const TitleAbout = styled.h3`
     bottom: 0;
     left: 33%;
     width: 33%;
-    heigh: 4px;
+    height: 4px;
     box-shadow: 0 0 0 1px rgba(0, 200, 100, 0.7),
       0 6px 0 2px rgba(0, 200, 100, 0.9);
   }

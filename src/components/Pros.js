@@ -2,11 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
 import Pro from "./Pro";
-//Icons
-import globeIcon from "./../img/pros/internet.png";
-import paperPlaneIcon from "./../img/pros/paper-plane.png";
-import chatsIcon from "./../img/pros/chat.png";
-import paintIcon from "./../img/pros/paint-palette.png";
 //Images
 import TopWave from "./../img/Home_Bckground/wave-top-pink2.svg";
 //Icons 2
