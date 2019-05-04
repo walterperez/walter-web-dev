@@ -78,7 +78,7 @@ export default function Pros() {
     <ProsDiv>
       <ProsBox>
         <ProsTitle>
-          About
+          Why
           <ScrollAnimation
             duration={0.5}
             animateIn="fadeIn"
