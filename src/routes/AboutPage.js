@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 //Images
 import mainPhoto from "./../img/walterperez.jpg";
+import signSVG from "./../img/walterSign.svg";
 
 const MainDivAbout = styled.div`
   width: 100%;
@@ -35,14 +36,16 @@ const PhotoProfile = styled.img`
   top: 50%;
   left: 50%;
   width: 10em;
-  heigh: 10em;
+  height: 10em;
   margin-top: -20em; /* Half the height */
   margin-left: -5em;
   border-radius: 50%;
+  transform: translateY(-3em);
   z-index: 2;
   transition: all linear 0.5s;
+  box-shadow: 0 5px 15px 10px rgba(50, 100, 150, 0.3);
   &:hover {
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px 0 rgba(50, 100, 150, 0.4);
   }
 `;
 
@@ -70,6 +73,13 @@ const TitleAbout = styled.h3`
   }
 `;
 
+const Sign = styled.img`
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+`;
+
 export default function About() {
   return (
     <MainDivAbout>
@@ -78,15 +88,16 @@ export default function About() {
         <ProfileDescription>
           <TitleAbout>Walter Perez</TitleAbout>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            I am a self taught web developer but currently finishing an
+            intensive full stackweb development course at Kodiri.com. I have
+            been for the last year programingwith JavaScript, React, Redux,
+            Node, Express, HTML, CSS and others webtechnologies. I am motivated
+            to keep improving and learning every day. I couldoffer you
+            enthusiasm, reliability, good capacity to work under pressure,
+            anexcellent approach in working with an international clientele and
+            overall passionfor the job.
           </p>
-          <p>ADD SIGN HERE</p>
+          <Sign src={signSVG} />
         </ProfileDescription>
       </MainContainer>
     </MainDivAbout>

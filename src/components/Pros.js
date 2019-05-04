@@ -90,41 +90,45 @@ export default function Pros() {
         </ProsTitle>
         <ProsContainer>
           <Pro
-            icon={chatIcon}
-            title={"Multilingual"}
-            description={"Fluent in English and Spanish."}
-          />
-          <Pro
-            icon={loupeIcon}
-            title={"Customer Service"}
-            description={"Over a half-decade providing an excellent service. "}
-          />
-          <Pro
-            icon={trophyIcon}
-            title={"Natural talent for arts"}
+            icon={checkedIcon}
+            title={"High quality code"}
             description={
-              "I draw, paint, and take photos in my free time, so I have a special eye for creating beautiful UI."
+              "I write clean code with the latest standards updates in the current market (ESLint)."
             }
           />
           <Pro
-            icon={checkedIcon}
+            icon={trophyIcon}
             title={"Excellent problem solver"}
             description={
-              "I love solving new problems and sharing knowledge to find new possible solutions to improve the problems already solve."
+              "Won a Kodiri Coding Challenge in Advance with 100 score."
+            }
+          />
+          <Pro
+            icon={chatIcon}
+            title={"Team player"}
+            description={
+              "Experience working as a part of a team using issues of Git and Github."
+            }
+          />
+          <Pro
+            icon={loupeIcon}
+            title={"Passion for learning"}
+            description={
+              "I enjoy learning new languages, technologies and frameworks. I always have a book to learn in my free time."
             }
           />
           <Pro
             icon={ideaIcon}
-            title={"Excellent problem solver"}
+            title={"Full Stack Web Developer"}
             description={
-              "I love solving new problems and sharing knowledge to find new possible solutions to improve the problems already solve."
+              "Deep knowledge of Front end (JavaScript ES6+ and React.js) as well a high level of server side with Node.js technologies."
             }
           />
           <Pro
             icon={brushIcon}
-            title={"Excellent problem solver"}
+            title={"Natural talent for arts"}
             description={
-              "I love solving new problems and sharing knowledge to find new possible solutions to improve the problems already solve."
+              "I draw, paint, and take photos in my free time, so I have a special eye for creating beautiful UI."
             }
           />
         </ProsContainer>

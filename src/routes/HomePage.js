@@ -81,16 +81,20 @@ const HomeButtonStart = styled.a`
   flex: 1;
   font-size: 1em;
   color: rgb(254, 255, 255);
-  background-color: #b3c100;
+  background: linear-gradient(155deg, #b3c100, #9aa500);
   text-decoration: none;
   border: 0;
-  border-radius: 5px;
+  font-weight: bolder;
+  border-radius: 50px;
   padding: 1em 3em;
   margin-bottom: 1em;
   transition: all 0.2s ease-in;
+  box-shadow: 0 5px 15px 10px rgba(150, 200, 100, 0.3);
+
   &:hover {
     background: linear-gradient(#b3c100, #9aa500);
-    box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 15px 10px rgba(150, 200, 100, 0.35);
+    transform: translateY(-50%);
     cursor: pointer;
   }
 `;
