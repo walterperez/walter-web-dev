@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import GithubIcon from "./../img/github-logo.svg";
-import LinkedInIcon from "./../img/linkedin.svg";
-import MailIcon from "./../img/mail.svg";
+import GithubIcon from "./../img/icons_svg/github-logo.svg";
+import LinkedInIcon from "./../img/icons_svg/linkedin.svg";
+import MailIcon from "./../img/icons_svg/mail.svg";
 
 const ContactButtonsDiv = styled.div`
   flex: 1;

@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 //Images
 import logo from "./../logo.svg";
-import hamburgerIconImg from "./../img/hamburgerIcon.svg";
+import hamburgerIconImg from "./../img/icons_svg/hamburgerIcon.svg";
 
 const HeaderMainDiv = styled.header`
   position: fixed;
   top: 0;
   z-index: 10;
   width: 100%;
-  padding: 0.1em 1.5em;
-  background-color: hsl(203, 89%, 63%);
+  padding: 0 1.5em;
+  background-color: #4fbcff;
   height: 3em;
   display: flex;
   flex-direction: row;
@@ -30,8 +30,7 @@ const HamburgerIcon = styled.img``;
 
 const HeaderLogo = styled.img`
   flex: 1;
-  width: 1.5em;
-  height: 1.5em;
+  height: 90%;
   pointer-events: none;
 `;
 
@@ -74,13 +73,7 @@ export default class Header extends Component {
     this.setState({
       listLinks: [
         { name: "Home", route: "/" },
-        { name: "About", route: "/about" },
-        { name: "Projects", route: "/myprojecs" },
-        { name: "Designs", route: "/brandDesigns" },
-        { name: "Contact", route: "/contact" },
-        { name: "Tools", route: "/tools" },
-        { name: "Services", route: "/services" },
-        { name: "Legal", route: "/legal" }
+        { name: "About", route: "/about" }
       ],
       isActive: !this.state.isActive
     });

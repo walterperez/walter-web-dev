@@ -8,8 +8,8 @@ import Footer from "./../components/FooterMain";
 import ContactButtons from "../components/ContactButtons";
 //Img
 import mainPhoto from "./../img/hero.svg";
-import waveBackground from "./../img/waveBackground2.png";
-import paperPlaneIcon from "./../img/sent-mail.svg";
+import waveBackground from "./../img/Home_Bckground/waveBackground2.png";
+import paperPlaneIcon from "./../img/icons_svg/sent-mail.svg";
 
 const HomeContainer = styled.div`
   position: relative;
@@ -73,7 +73,7 @@ const HomeSubtitle = styled.h3`
   height: auto;
   font-size: 1.5em;
   flex: 0;
-  color: rgba(226, 226, 226, 0.8);
+  color: rgba(226, 226, 226, 0.9);
   margin-bottom: 1em;
 `;
 

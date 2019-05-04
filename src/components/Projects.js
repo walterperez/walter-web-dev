@@ -4,23 +4,23 @@ import ScrollAnimation from "react-animate-on-scroll";
 //Components
 import Project from "./Project";
 //Projects
-import cuttingGuruProject from "./../img/cuttingguru.png";
-import walkerbarbershopProject from "./../img/walkerbarbershop.png";
-import walterrepoProject from "./../img/walterrepo.png";
-import wd1ProjectProject from "./../img/wd1.png";
-import kodflixProject from "./../img/kodflix.png";
+import cuttingGuruProject from "./../img/projects/cuttingguru.png";
+import walkerbarbershopProject from "./../img/projects/walkerbarbershop.png";
+import walterrepoProject from "./../img/projects/walterrepo.png";
+import wd1ProjectProject from "./../img/projects/wd1.png";
+import kodflixProject from "./../img/projects/kodflix.png";
 //Icons
-import iconHtml5 from "./../img/html5.png";
-import iconNodejs from "./../img/nodejs.png";
-import iconReact from "./../img/react.png";
-import iconCss3 from "./../img/css-3.png";
-import iconJs from "./../img/js.png";
-import iconRedux from "./../img/redux.png";
-import iconWordpress from "./../img/wordpress.png";
-import iconSass from "./../img/sass.jpg";
-import iconMongoDB from "./../img/mongodb.png";
-import iconHeroku from "./../img/heroku.png";
-import iconFirebase from "./../img/firebase.png";
+import iconHtml5 from "./../img/icons_tools/html5.png";
+import iconNodejs from "./../img/icons_tools/nodejs.png";
+import iconReact from "./../img/icons_tools/react.png";
+import iconCss3 from "./../img/icons_tools/css-3.png";
+import iconJs from "./../img/icons_tools/js.png";
+import iconRedux from "./../img/icons_tools/redux.png";
+import iconWordpress from "./../img/icons_tools/wordpress.png";
+import iconSass from "./../img/icons_tools/sass.jpg";
+import iconMongoDB from "./../img/icons_tools/mongodb.png";
+import iconHeroku from "./../img/icons_tools/heroku.png";
+import iconFirebase from "./../img/icons_tools/firebase.png";
 
 const ProjectsMainDiv = styled.div`
   background-color: #f7f7f7;
@@ -29,8 +29,9 @@ const ProjectsMainDiv = styled.div`
 const ProjectsContContainers = styled.div`
   margin: 0;
   padding: 0 5%;
-  background: linear-gradient(#b3c100, #68c300);
-  padding: 0 5% 5% 5%;
+  background: linear-gradient(rgba(250, 250, 250, 0), rgba(0, 0, 0, 0.2)),
+    #ff6969;
+  padding: 1em 10% 5% 10%;
 `;
 
 const ProjectTitle = styled.h2`
@@ -40,7 +41,7 @@ const ProjectTitle = styled.h2`
   align-items: center;
   text-align: center;
   font-size: 1.8rem;
-  color: rgba(250, 250, 250, 0.8);
+  color: rgba(250, 250, 250, 0.9);
   text-transform: uppercase;
   letter-spacing: 0.2em;
   margin: 0;

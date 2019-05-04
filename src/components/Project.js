@@ -67,16 +67,16 @@ const StackImg = styled.img`
 const GitHub = styled.a`
   margin-right: 1rem;
   text-decoration: none;
-  color: green;
+  color: #66c4ff;
   &:hover {
-    color: #08db08;
+    color: #4fbcff;
   }
 `;
 const Demo = styled.a`
   text-decoration: none;
-  color: green;
+  color: #66c4ff;
   &:hover {
-    color: #08db08;
+    color: #4fbcff;
   }
 `;
 
@@ -111,6 +111,7 @@ export default function Project({
             <GitHub href={git} target="_blank">
               GitHub
             </GitHub>
+
             <Demo href={url} target="_blank">
               Demo
             </Demo>
