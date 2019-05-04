@@ -42,7 +42,7 @@ const MenuHamburger = styled.div`
   height: 100%;
   min-width: 250px;
   z-index: 100;
-  background-color: hsl(203, 89%, 63%);
+  background-color: #4fbcff;
 `;
 
 const MenuHamburgerList = styled.ul`
@@ -54,10 +54,14 @@ const MenuHamburgerListElment = styled.li`
   display: block;
   padding: 0.5em 1em;
   text-decoration: none;
+  font-weight: bolder;
+  text-align: center;
+  transition: all linear 0.3s;
   &:hover {
     background-color: #0d8bd9;
     color: white;
     cursor: pointer;
+    border-right: solid 5px #b0bd00;
   }
 `;
 

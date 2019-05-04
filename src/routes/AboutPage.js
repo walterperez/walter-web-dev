@@ -23,7 +23,7 @@ const MainDivAbout = styled.div`
 const MainContainer = styled.div`
   position: relative;
   max-width: 400px;
-  heigh: auto;
+  height: auto;
   background-color: #f6f6f6;
   transition: all linear 0.5s;
   &:hover {
