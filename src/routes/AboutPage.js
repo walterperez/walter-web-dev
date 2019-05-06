@@ -67,7 +67,6 @@ const TitleAbout = styled.h3`
     bottom: 0;
     left: 33%;
     width: 33%;
-    height: 4px;
     box-shadow: 0 0 0 1px rgba(0, 200, 100, 0.7),
       0 6px 0 2px rgba(0, 200, 100, 0.9);
   }
@@ -88,14 +87,14 @@ export default function About() {
         <ProfileDescription>
           <TitleAbout>Walter Perez</TitleAbout>
           <p>
-            I am a self taught web developer but currently finishing an
-            intensive full stack web development bootcamp at Kodiri.com. I have
-            been for the last year programing with JavaScript, React, Redux,
-            Node, Express, HTML, CSS and others web technologies. I am motivated
-            to keep improving and learning every day. I could offer you
-            enthusiasm, reliability, good capacity to work under pressure, an
-            excellent approach in working with an international clientele and
-            overall passion for the job.
+            I am a self-taught web developer who is currently finishing an
+            intensive full stack web development boot camp at Kodiri.com. For
+            the last year I have developed with JavaScript, React.js, Redux,
+            Node, Express, HTML, CSS3 and others web technologies. I am highly
+            motivated and aim to improve and learn every day. I am enthusiastic,
+            reliable and I can work under pressure. I have a strong passion for
+            the job at hand and have can deliver this passion to all working
+            environments and with all sized companies.
           </p>
           <Sign src={signSVG} />
         </ProfileDescription>
