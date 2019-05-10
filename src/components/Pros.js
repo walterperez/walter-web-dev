@@ -88,28 +88,28 @@ export default function Pros() {
             icon={checkedIcon}
             title={"High quality code"}
             description={
-              "I write clean code with the latest standards updates in the current market (ESLint)."
+              "I write clean code, following the latest industry standards in the current market (ESLint)."
             }
           />
           <Pro
             icon={trophyIcon}
             title={"Excellent problem solver"}
             description={
-              "Won a Kodiri Coding Challenge in Advance with 100 score."
+              "Won an advanced Kodiri Coding Challenge with a score of 100."
             }
           />
           <Pro
             icon={chatIcon}
             title={"Team player"}
             description={
-              "Experience working as a part of a team using issues of Git and Github."
+              "Have experience working in a team, using pair programming to solve issues on Git and Github."
             }
           />
           <Pro
             icon={loupeIcon}
             title={"Passion for learning"}
             description={
-              "I enjoy learning new languages, technologies and frameworks. I always have a book to learn in my free time."
+              "I enjoy learning new languages, technologies and frameworks. I love reading books and learning in my free time."
             }
           />
           <Pro

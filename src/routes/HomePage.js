@@ -4,8 +4,8 @@ import ScrollAnimation from "react-animate-on-scroll";
 //Components
 import Pros from "./../components/Pros";
 import Projects from "./../components/Projects";
-import Footer from "./../components/FooterMain";
 import ContactButtons from "../components/ContactButtons";
+import Reviews from "../components/Reviews";
 //Img
 import mainPhoto from "./../img/hero.svg";
 import waveBackground from "./../img/Home_Bckground/waveBackground2.png";
@@ -162,7 +162,7 @@ export default function HomePage() {
       </HomeContainer>
       <Pros />
       <Projects />
-      <Footer />
+      <Reviews />
     </React.Fragment>
   );
 }
