@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import ContactButtons from "./ContactButtons";
+import React from 'react';
+import styled from 'styled-components';
+import ContactButtons from './ContactButtons';
 
 const FooterDiv = styled.div`
   width: 100%;

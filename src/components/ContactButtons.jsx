@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import GithubIcon from "./../img/icons_svg/github-logo.svg";
-import LinkedInIcon from "./../img/icons_svg/linkedin.svg";
-import MailIcon from "./../img/icons_svg/mail.svg";
+import React from 'react';
+import styled from 'styled-components';
+import GithubIcon from '../img/icons_svg/github-logo.svg';
+import LinkedInIcon from '../img/icons_svg/linkedin.svg';
+import MailIcon from '../img/icons_svg/mail.svg';
 
 const ContactButtonsDiv = styled.div`
   flex: 1;
@@ -52,17 +52,15 @@ const Icon = styled.img`
 export default function ContactButtons() {
   return (
     <ContactButtonsDiv>
-      <Link href={"https://github.com/walterperez"} target="_blank">
+      <Link href="https://github.com/walterperez" target="_blank">
         <Icon src={GithubIcon} />
       </Link>
       <Link
-        href={
-          "https://www.linkedin.com/in/walter-christian-perez-hernandez-0730a9184/"
-        }
+        href="https://www.linkedin.com/in/walter-christian-perez-hernandez-0730a9184/"
       >
         <Icon src={LinkedInIcon} />
       </Link>
-      <Link href={"mailto:walter_cph93@outlook.com"} target="_blank">
+      <Link href="mailto:walter_cph93@outlook.com" target="_blank">
         <Icon src={MailIcon} />
       </Link>
     </ContactButtonsDiv>

@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
+import React from 'react';
+import styled from 'styled-components';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const ProjectContainer = styled.div`
   transition: all 0.3s ease-in;
@@ -86,10 +86,10 @@ export default function Project({
   description,
   stacks,
   git,
-  url
+  url,
 }) {
   return (
-    <ScrollAnimation duration={0.5} animateIn="fadeIn" animateOnce={true}>
+    <ScrollAnimation duration={0.5} animateIn="fadeIn" animateOnce>
       <ProjectContainer>
         <ProjectPhotoContainer>
           <ProjectPhoto src={photo} alt={title} />
@@ -100,11 +100,9 @@ export default function Project({
           <ProjectDescription>{description}</ProjectDescription>
           <StackUsed>
             {stacks
-              ? stacks.map((stack, index) => {
-                  return (
-                    <StackImg src={stack} alt={"stack icon"} key={index} />
-                  );
-                })
+              ? stacks.map((stack, index) => (
+                <StackImg src={stack} alt="stack icon" key={index} />
+              ))
               : null}
           </StackUsed>
           <Urls>

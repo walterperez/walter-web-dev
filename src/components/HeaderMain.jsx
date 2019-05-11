@@ -1,9 +1,9 @@
-import React, { Component, Fragment } from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-//Images
-import logo from "./../logo.svg";
-import hamburgerIconImg from "./../img/icons_svg/hamburgerIcon.svg";
+import React, { Component, Fragment } from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+// Images
+import logo from '../logo.svg';
+import hamburgerIconImg from '../img/icons_svg/hamburgerIcon.svg';
 
 const HeaderMainDiv = styled.header`
   position: fixed;
@@ -69,17 +69,17 @@ export default class Header extends Component {
   constructor() {
     super();
     this.state = {
-      isActive: false
+      isActive: false,
     };
   }
 
   handleHamburgerClick() {
     this.setState({
       listLinks: [
-        { name: "Home", route: "/" },
-        { name: "About", route: "/about" }
+        { name: 'Home', route: '/' },
+        { name: 'About', route: '/about' },
       ],
-      isActive: !this.state.isActive
+      isActive: !this.state.isActive,
     });
   }
 
@@ -101,17 +101,15 @@ export default class Header extends Component {
         </HeaderMainDiv>,
         <MenuHamburger>
           <MenuHamburgerList>
-            {this.state.listLinks.map((link, index) => {
-              return (
-                <Link to={link.route} style={{ textDecoration: "none" }}>
-                  <MenuHamburgerListElment key={link.name + index}>
-                    {link.name}
-                  </MenuHamburgerListElment>
-                </Link>
-              );
-            })}
+            {this.state.listLinks.map((link, index) => (
+              <Link to={link.route} style={{ textDecoration: 'none' }}>
+                <MenuHamburgerListElment key={link.name + index}>
+                  {link.name}
+                </MenuHamburgerListElment>
+              </Link>
+            ))}
           </MenuHamburgerList>
-        </MenuHamburger>
+        </MenuHamburger>,
       ]
     );
   }

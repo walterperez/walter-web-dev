@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const MainReviewer = styled.div`
   width: 100%;
@@ -48,7 +48,9 @@ const Content = styled.div`
 
 const Description = styled.p``;
 
-export default function Reviewer({ photo, name, company, description }) {
+export default function Reviewer({
+  photo, name, company, description,
+}) {
   return (
     <>
       <MainReviewer>

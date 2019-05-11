@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-//Images
-import mainPhoto from "./../img/walterperez.jpg";
-import signSVG from "./../img/walterSign.svg";
+import React from 'react';
+import styled from 'styled-components';
+// Images
+import mainPhoto from '../img/walterperez.jpg';
+import signSVG from '../img/walterSign.svg';
 
 const MainDivAbout = styled.div`
   width: 100%;

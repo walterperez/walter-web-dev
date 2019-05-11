@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
-//Components
-import Pros from "./../components/Pros";
-import Projects from "./../components/Projects";
-import ContactButtons from "../components/ContactButtons";
-import Reviews from "../components/Reviews";
-//Img
-import mainPhoto from "./../img/hero.svg";
-import waveBackground from "./../img/Home_Bckground/waveBackground2.png";
-import paperPlaneIcon from "./../img/icons_svg/sent-mail.svg";
+import React from 'react';
+import styled from 'styled-components';
+import ScrollAnimation from 'react-animate-on-scroll';
+// Components
+import Pros from '../components/Pros';
+import Projects from '../components/Projects';
+import ContactButtons from '../components/ContactButtons';
+import Reviews from '../components/Reviews';
+// Img
+import mainPhoto from '../img/hero.svg';
+import waveBackground from '../img/Home_Bckground/waveBackground2.png';
+import paperPlaneIcon from '../img/icons_svg/sent-mail.svg';
 
 const HomeContainer = styled.div`
   position: relative;
@@ -123,7 +123,7 @@ export default function HomePage() {
             duration={0.5}
             animateIn="fadeInLeftBig"
             animateOut="fadeOut"
-            animateOnce={true}
+            animateOnce
           >
             <HomeTitle>Walter Perez</HomeTitle>
           </ScrollAnimation>
@@ -132,7 +132,7 @@ export default function HomePage() {
             duration={0.5}
             animateIn="fadeInLeftBig"
             animateOut="fadeOut"
-            animateOnce={true}
+            animateOnce
           >
             <HomeSubtitle>Front End Web Developer</HomeSubtitle>
           </ScrollAnimation>
@@ -141,10 +141,12 @@ export default function HomePage() {
             duration={0.5}
             animateIn="fadeInLeftBig"
             animateOut="fadeOut"
-            animateOnce={true}
+            animateOnce
           >
-            <HomeButtonStart href={"mailto:walter_cph93@outlook.com"}>
-              Contact now! <PaperIcon src={paperPlaneIcon} />
+            <HomeButtonStart href="mailto:walter_cph93@outlook.com">
+              Contact now!
+              {' '}
+              <PaperIcon src={paperPlaneIcon} />
             </HomeButtonStart>
           </ScrollAnimation>
 
@@ -153,7 +155,7 @@ export default function HomePage() {
             duration={0.5}
             animateIn="fadeInLeftBig"
             animateOut="fadeOut"
-            animateOnce={true}
+            animateOnce
           >
             <ContactButtons />
           </ScrollAnimation>
@@ -162,7 +164,7 @@ export default function HomePage() {
       </HomeContainer>
       <Pros />
       <Projects />
-      <Reviews />
+      {/* WIP <Reviews /> */}
     </React.Fragment>
   );
 }

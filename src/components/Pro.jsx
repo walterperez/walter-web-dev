@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
+import React from 'react';
+import styled from 'styled-components';
+import ScrollAnimation from 'react-animate-on-scroll';
 
-//Styles
+// Styles
 const ProContainer = styled.div`
   padding: 0.5em 1em;
   display: flex;
@@ -45,7 +45,7 @@ export default function Pro({ icon, title, description }) {
       duration={0.5}
       animateIn="fadeInLeftBig"
       animateOut="fadeOut"
-      animateOnce={true}
+      animateOnce
     >
       <ProContainer>
         <ProIcon>
