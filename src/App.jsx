@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
+import ReactGA from 'react-ga';
 // CSS
 import './App.css';
 // Components
@@ -9,7 +10,16 @@ import Home from './routes/HomePage';
 import About from './routes/AboutPage';
 import Footer from './components/FooterMain';
 
-function App() {
+class App extends Component {
+  componentDidMount() {
+    ReactGA.initialize('UA-140140831-1');
+    ReactGA.pageview(window.location.pathname);
+    this.props.history.listen((location, action) => {
+      ReactGA.pageview(window.location.pathname);
+    });
+  }
+
+  render() {
     return (
       <div className="App">
         <Header />
@@ -20,6 +30,7 @@ function App() {
         <Footer />
       </div>
     );
+  }
 }
 
-export default App;
+export default withRouter(App);
