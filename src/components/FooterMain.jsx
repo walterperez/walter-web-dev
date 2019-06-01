@@ -22,7 +22,7 @@ const Copyrights = styled.p`
 
 export default function Footer() {
   return (
-    <FooterDiv>
+    <FooterDiv id="footer">
       <ContactButtons />
       <Copyrights>© Designed by WalterWebDev | All rights reserved</Copyrights>
     </FooterDiv>

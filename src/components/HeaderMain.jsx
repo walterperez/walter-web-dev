@@ -64,6 +64,16 @@ const MenuHamburgerListElment = styled.li`
     border-right: solid 5px #b0bd00;
   }
 `;
+const BlurBackground = styled.div`
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+`;
 
 export default class Header extends Component {
   constructor() {
@@ -78,6 +88,8 @@ export default class Header extends Component {
       listLinks: [
         { name: 'Home', route: '/' },
         { name: 'About', route: '/about' },
+        { name: 'Designs', route: '/designs' },
+        { name: 'Books', route: '/books' },
       ],
       isActive: !this.state.isActive,
     });
@@ -108,8 +120,12 @@ export default class Header extends Component {
                 </MenuHamburgerListElment>
               </Link>
             ))}
+            <a href="#footer" style={{ textDecoration: 'none' }}>
+              <MenuHamburgerListElment key="conctact">Contact</MenuHamburgerListElment>
+            </a>
           </MenuHamburgerList>
         </MenuHamburger>,
+        <BlurBackground onClick={() => this.handleHamburgerClick()} />,
       ]
     );
   }

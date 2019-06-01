@@ -24,7 +24,7 @@ const HomeContainer = styled.div`
   margin: 0;
   overflow: hidden;
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     width: 200%;
     height: 200%;
@@ -89,11 +89,11 @@ const HomeButtonStart = styled.a`
   padding: 1em 3em;
   margin-bottom: 1em;
   transition: all 0.2s ease-in;
-  box-shadow: 0 5px 15px 10px rgba(150, 200, 100, 0.3);
+  box-shadow: 0 5px 15px 1px rgba(150, 200, 100, 0.3);
 
   &:hover {
     background: linear-gradient(#b3c100, #9aa500);
-    box-shadow: 0 5px 15px 10px rgba(150, 200, 100, 0.35);
+    box-shadow: 0 5px 15px 5px rgba(150, 200, 100, 0.55);
     transform: translateY(-50%);
     cursor: pointer;
   }
@@ -134,7 +134,7 @@ export default function HomePage() {
             animateOut="fadeOut"
             animateOnce
           >
-            <HomeSubtitle>Front End Web Developer</HomeSubtitle>
+            <HomeSubtitle>Web Developer</HomeSubtitle>
           </ScrollAnimation>
           <ScrollAnimation
             delay={1000}

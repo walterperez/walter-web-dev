@@ -5,10 +5,12 @@ import ReactGA from 'react-ga';
 import './App.css';
 // Components
 import Header from './components/HeaderMain';
+import Footer from './components/FooterMain';
 // Routes
 import Home from './routes/HomePage';
 import About from './routes/AboutPage';
-import Footer from './components/FooterMain';
+import Designs from './routes/Designs';
+import Books from './routes/Books';
 
 class App extends Component {
   componentDidMount() {
@@ -27,6 +29,8 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/designs" component={Designs} />
+          <Route exact path="/books" component={Books} />
         </Switch>
         <Footer />
       </div>

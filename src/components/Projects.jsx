@@ -22,7 +22,7 @@ import iconSass from '../img/icons_tools/sass.jpg';
 import iconMongoDB from '../img/icons_tools/mongodb.png';
 import iconHeroku from '../img/icons_tools/heroku.png';
 import iconFirebase from '../img/icons_tools/firebase.png';
-import iconCordova from '../img/icons_tools/cordova.png';
+import iconCordova from '../img/icons_tools/Cordova.png';
 
 const ProjectsMainDiv = styled.div`
   background-color: #f7f7f7;
@@ -87,7 +87,7 @@ export default function Projects() {
           <Project
             photo={kodflixProject}
             title="Kodflix"
-            stacks={[iconReact, iconNodejs, iconHeroku, iconMongoDB, iconCss3, iconJs]}
+            stacks={[iconReact, iconNodejs, iconHeroku, iconMongoDB, iconCss3, iconJs, iconCordova]}
             url="https://kodflix-walterperez.herokuapp.com/"
             git="https://github.com/walterperez/kodflix"
             description="Rest full API pretending to clone Netflix, all the movies are fetched from Mongo Atlas DB. I used Express.js for the node server, and React.js for the UI."
@@ -113,23 +113,18 @@ export default function Projects() {
             title="Cutting Guru"
             stacks={[iconWordpress, iconCss3]}
             url="https://www.cuttingguru.co.uk"
-            git="#"
             description="This was a project for a hairdresser salon in London, the owner wanted to keep the website with updates and have the total control of the website, so I decide to use Wordpress for this."
           />
           <Project
             photo={walkerbarbershopProject}
             title="Walker Barbershop"
             stacks={[iconHtml5, iconCss3, iconJs]}
-            url="#"
-            git="https://github.com/walterperez/"
             description="This was the first project I ever made with flat HTML5, CSS3 and a bit of Javascript, it was for a barbershop owner in Spain, the owner just wanted a flat website and he was not really interested in update it."
           />
           <Project
             photo={wd1ProjectProject}
             title="Walter Designs"
             stacks={[iconHtml5, iconCss3, iconJs]}
-            url="#"
-            git="https://github.com/walterperez/"
             description="This was going to be my first website when I just knew HTML and CSS3."
           />
         </GridForProjects>

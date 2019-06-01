@@ -81,12 +81,7 @@ const Demo = styled.a`
 `;
 
 export default function Project({
-  photo,
-  title,
-  description,
-  stacks,
-  git,
-  url,
+  photo, title, description, stacks, git, url,
 }) {
   return (
     <ScrollAnimation duration={0.5} animateIn="fadeIn" animateOnce>
@@ -100,19 +95,21 @@ export default function Project({
           <ProjectDescription>{description}</ProjectDescription>
           <StackUsed>
             {stacks
-              ? stacks.map((stack, index) => (
-                <StackImg src={stack} alt="stack icon" key={index} />
-              ))
+              ? stacks.map((stack, index) => <StackImg src={stack} alt="stack icon" key={index} />)
               : null}
           </StackUsed>
           <Urls>
-            <GitHub href={git} target="_blank">
-              GitHub
-            </GitHub>
+            {git && (
+              <GitHub href={git} target="_blank">
+                GitHub
+              </GitHub>
+            )}
 
-            <Demo href={url} target="_blank">
-              Demo
-            </Demo>
+            {url && (
+              <Demo href={url} target="_blank">
+                Demo
+              </Demo>
+            )}
           </Urls>
         </Description>
       </ProjectContainer>

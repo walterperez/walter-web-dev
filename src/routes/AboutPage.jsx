@@ -30,7 +30,7 @@ const MainContainer = styled.div`
 
 const PhotoProfile = styled.img`
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50%;
   width: 10em;
   height: 10em;
@@ -83,12 +83,13 @@ export default function About() {
         <ProfileDescription>
           <TitleAbout>Walter Perez</TitleAbout>
           <p>
-            I am a self-taught web developer who is currently finishing an intensive full stack web
+            I am a self-taught web developer, and just graduated in an intensive full stack web
             development boot camp at Kodiri.com. For the last year I have developed with JavaScript,
-            React.js, Redux, Node, Express, HTML, CSS3 and others web technologies. I am highly
-            motivated and aim to improve and learn every day. I am enthusiastic, reliable and I can
-            work under pressure. I have a strong passion for the job at hand and have can deliver
-            this passion to all working environments and with all sized companies.
+            React.js, Redux, Node, Express, HTML, CSS and others web technologies. I am highly
+            motivated, continuously improving my skills daily. I am enthusiastic, reliable and I can
+            work under pressure due to my background in customer service management roles. My
+            passion for working hard and to a high standard in varied environments and companies of
+            different sizes, has helped me to excel in my career.
           </p>
           <Sign src={signSVG} />
         </ProfileDescription>
