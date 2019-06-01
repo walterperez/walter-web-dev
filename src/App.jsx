@@ -12,9 +12,10 @@ import Footer from './components/FooterMain';
 
 class App extends Component {
   componentDidMount() {
+    const { history } = this.props;
     ReactGA.initialize('UA-140140831-1');
     ReactGA.pageview(window.location.pathname);
-    this.props.history.listen((location, action) => {
+    history.listen((location, action) => {
       ReactGA.pageview(window.location.pathname);
     });
   }

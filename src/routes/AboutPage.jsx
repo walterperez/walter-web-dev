@@ -9,11 +9,7 @@ const MainDivAbout = styled.div`
   position: relative;
   min-height: 100vh;
   background-color: #4db4f5;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(0, 0, 0, 0.05),
-    rgba(0, 0, 0, 0.35)
-  );
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.35));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +20,7 @@ const MainContainer = styled.div`
   position: relative;
   max-width: 400px;
   height: auto;
+  min-width: 30%;
   background-color: #f6f6f6;
   transition: all linear 0.5s;
   &:hover {
@@ -62,13 +59,12 @@ const TitleAbout = styled.h3`
   position: relative;
 
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 33%;
     width: 33%;
-    box-shadow: 0 0 0 1px rgba(0, 200, 100, 0.7),
-      0 6px 0 2px rgba(0, 200, 100, 0.9);
+    box-shadow: 0 0 0 1px rgba(0, 200, 100, 0.7), 0 6px 0 2px rgba(0, 200, 100, 0.9);
   }
 `;
 
@@ -87,14 +83,12 @@ export default function About() {
         <ProfileDescription>
           <TitleAbout>Walter Perez</TitleAbout>
           <p>
-            I am a self-taught web developer who is currently finishing an
-            intensive full stack web development boot camp at Kodiri.com. For
-            the last year I have developed with JavaScript, React.js, Redux,
-            Node, Express, HTML, CSS3 and others web technologies. I am highly
-            motivated and aim to improve and learn every day. I am enthusiastic,
-            reliable and I can work under pressure. I have a strong passion for
-            the job at hand and have can deliver this passion to all working
-            environments and with all sized companies.
+            I am a self-taught web developer who is currently finishing an intensive full stack web
+            development boot camp at Kodiri.com. For the last year I have developed with JavaScript,
+            React.js, Redux, Node, Express, HTML, CSS3 and others web technologies. I am highly
+            motivated and aim to improve and learn every day. I am enthusiastic, reliable and I can
+            work under pressure. I have a strong passion for the job at hand and have can deliver
+            this passion to all working environments and with all sized companies.
           </p>
           <Sign src={signSVG} />
         </ProfileDescription>
