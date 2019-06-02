@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import ScrollAnimation from 'react-animate-on-scroll';
+import React from "react";
+import styled from "styled-components";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const ProjectContainer = styled.div`
   transition: all 0.3s ease-in;
@@ -44,6 +44,7 @@ const Description = styled.div`
 `;
 const Title = styled.h3`
   color: #0578b8;
+  display: inline-block;
   font-size: 1.3rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -53,7 +54,7 @@ const ProjectDescription = styled.p`
   overflow-y: scroll;
   padding: 0.5em 1em;
   height: 100%;
-  min-heigh: 100%;
+  min-height: 100%;
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 1.5rem;
 `;
@@ -81,7 +82,12 @@ const Demo = styled.a`
 `;
 
 export default function Project({
-  photo, title, description, stacks, git, url,
+  photo,
+  title,
+  description,
+  stacks,
+  git,
+  url
 }) {
   return (
     <ScrollAnimation duration={0.5} animateIn="fadeIn" animateOnce>
@@ -95,7 +101,9 @@ export default function Project({
           <ProjectDescription>{description}</ProjectDescription>
           <StackUsed>
             {stacks
-              ? stacks.map((stack, index) => <StackImg src={stack} alt="stack icon" key={index} />)
+              ? stacks.map((stack, index) => (
+                  <StackImg src={stack} alt="stack icon" key={index} />
+                ))
               : null}
           </StackUsed>
           <Urls>
