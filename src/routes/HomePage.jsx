@@ -6,6 +6,7 @@ import Pros from '../components/Pros';
 import Projects from '../components/Projects';
 import ContactButtons from '../components/ContactButtons';
 import Reviews from '../components/Reviews';
+import Tools from '../components/Tools';
 // Img
 import mainPhoto from '../img/hero.svg';
 import waveBackground from '../img/Home_Bckground/waveBackground2.png';
@@ -164,6 +165,7 @@ export default function HomePage() {
       </HomeContainer>
       <Pros />
       <Projects />
+      <Tools />
       {/* WIP <Reviews /> */}
     </React.Fragment>
   );

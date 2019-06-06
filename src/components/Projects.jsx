@@ -146,14 +146,14 @@ export default function Projects() {
             git="https://github.com/walterperez/walker-barbershop"
             description="This was the first project I ever made with flat HTML5, CSS3 and a bit of Javascript, it was for a barbershop owner in Spain, the owner just wanted a flat website and he was not really interested in update it."
           />
-          <Project
+          {/* <Project
             photo={wd1ProjectProject}
             title="Walter Designs"
             stacks={[iconHtml5, iconCss3]}
             url="https://walterperez.github.io/Walter-Designs-original/"
             git="https://github.com/walterperez/Walter-Designs-original"
             description="This was going to be my first website when I just knew HTML and CSS3."
-          />
+          /> */}
         </GridForProjects>
       </ProjectsContContainers>
     </ProjectsMainDiv>
