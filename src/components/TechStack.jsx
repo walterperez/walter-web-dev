@@ -10,7 +10,8 @@ const TechStackDiv = styled.div`
   margin-bottom: 2em;
 `;
 
-const TitleTechStack = styled.h4`
+const TitleTechStack = styled.h3`
+  font-size: 1.5em;
   color: #444;
   text-align: center;
   margin-bottom: 1em;

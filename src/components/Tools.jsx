@@ -22,6 +22,8 @@ import iconIllustrator from '../img/icons_tools/illustrator.png';
 import iconPhotoshop from '../img/icons_tools/photoshop.png';
 import iconSlack from '../img/icons_tools/slack.jpg';
 import iconGitLogo from '../img/icons_tools/gitlogo.png';
+import iconVSC from '../img/icons_tools/vsc.png';
+import iconPostman from '../img/icons_tools/postman.png';
 
 const ToolsMainDiv = styled.div`
   background-color: #f7f7f7;
@@ -84,13 +86,13 @@ export default function Tools() {
             title="Front End Development"
             icons={[iconJs, iconCss3, iconHtml5, iconReact, iconRedux, iconSass]}
           />
-          <TechStack title="Back End Development" icons={[iconNodejs, iconMongoDB, iconHeroku]} />
+          <TechStack title="Back End Development" icons={[iconNodejs, iconMongoDB, iconHeroku, iconFirebase]} />
         </ToolsFlex1>
         <ToolsFlex1>
           <TechStack title="Ui/UX Design" icons={[iconAdobeXD, iconPhotoshop, iconIllustrator]} />
           <TechStack
             title="Other tools"
-            icons={[iconGitLogo, iconSlack, iconCordova, iconWordpress]}
+            icons={[iconGitLogo, iconSlack, iconCordova, iconWordpress, iconVSC, iconPostman]}
           />
         </ToolsFlex1>
       </ToolsMainFlex>
