@@ -1,3 +1,29 @@
+### About this Repository
+
+This is my personal portfolio website.
+
+https://walter-web-dev.herokuapp.com/books#footer
+
+The tech stack that I used is: React.js, React-Router, Styled-Components, React-Animate-On-Scroll, and Prop-Types.
+
+Feel free to use it as a boilerplate for your project.
+
+The use is exactly the same as Create-React-App (because was build using CRA):
+
+So just type:
+
+git clone https://github.com/walterperez/walter-web-dev
+
+git cd walter-web-dev
+
+npm i
+
+npm start
+
+**Note: I keep added the CRA official information below**
+
+### This the normal Create-React-App README information:
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
