@@ -2,7 +2,7 @@
 
 This is my personal portfolio website.
 
-https://walter-web-dev.herokuapp.com/books#footer
+https://walter-web-dev.herokuapp.com/
 
 The tech stack that I used is: React.js, React-Router, Styled-Components, React-Animate-On-Scroll, and Prop-Types.
 
