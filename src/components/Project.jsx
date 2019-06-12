@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const ProjectContainer = styled.div`
   transition: all 0.3s ease-in;
   width: 100%;
-  max-height: 600px;
   margin-bottom: 1em;
   display: flex;
   overflow-x: hidden;
@@ -21,6 +21,9 @@ const ProjectContainer = styled.div`
   }
   @media (min-width: 401px) {
     margin-top: 10%;
+  }
+  @media (max-width: 1400px) {
+    max-height: 650px;
   }
 `;
 const ProjectPhotoContainer = styled.div`
@@ -81,14 +84,7 @@ const Demo = styled.a`
   }
 `;
 
-export default function Project({
-  photo,
-  title,
-  description,
-  stacks,
-  git,
-  url
-}) {
+function Project({ photo, title, description, stacks, git, url }) {
   return (
     <ScrollAnimation duration={0.5} animateIn="fadeIn" animateOnce>
       <ProjectContainer>
@@ -101,8 +97,12 @@ export default function Project({
           <ProjectDescription>{description}</ProjectDescription>
           <StackUsed>
             {stacks
-              ? stacks.map((stack, index) => (
-                  <StackImg src={stack} alt="stack icon" key={index} />
+              ? stacks.map((stack, indx) => (
+                  <StackImg
+                    src={stack}
+                    alt="stack icon"
+                    key={`stackUsed${indx}`}
+                  />
                 ))
               : null}
           </StackUsed>
@@ -124,3 +124,14 @@ export default function Project({
     </ScrollAnimation>
   );
 }
+
+Project.propTypes = {
+  photo: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  stacks: PropTypes.array.isRequired,
+  git: PropTypes.string,
+  url: PropTypes.string
+};
+
+export default Project;

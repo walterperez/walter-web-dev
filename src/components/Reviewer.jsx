@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const MainReviewer = styled.div`
@@ -48,9 +49,7 @@ const Content = styled.div`
 
 const Description = styled.p``;
 
-export default function Reviewer({
-  photo, name, company, description,
-}) {
+function Reviewer({ photo, name, company, description }) {
   return (
     <>
       <MainReviewer>
@@ -66,3 +65,12 @@ export default function Reviewer({
     </>
   );
 }
+
+Reviewer.propTypes = {
+  photo: PropTypes.string.isRequire,
+  name: PropTypes.string.isRequire,
+  company: PropTypes.string.isRequire,
+  description: PropTypes.string.isRequire
+};
+
+export default Reviewer;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -39,7 +40,7 @@ const ProSubtitle = styled.h3`
   color: rgb(155, 153, 153);
 `;
 
-export default function Pro({ icon, title, description }) {
+function Pro({ icon, title, description }) {
   return (
     <ScrollAnimation
       duration={0.5}
@@ -59,3 +60,11 @@ export default function Pro({ icon, title, description }) {
     </ScrollAnimation>
   );
 }
+
+Pro.propTypes = {
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
+};
+
+export default Pro;

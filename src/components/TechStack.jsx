@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -34,9 +35,14 @@ const ImageStack = styled.img`
   }
 `;
 
-export default function TechStack({ title, icons }) {
+function TechStack({ title, icons }) {
   return (
-    <ScrollAnimation duration={0.5} animateIn="fadeIn" animateOut="fadeOut" animateOnce>
+    <ScrollAnimation
+      duration={0.5}
+      animateIn="fadeIn"
+      animateOut="fadeOut"
+      animateOnce
+    >
       <TechStackDiv>
         <TitleTechStack>{title}</TitleTechStack>
         <StackBox>
@@ -48,3 +54,10 @@ export default function TechStack({ title, icons }) {
     </ScrollAnimation>
   );
 }
+
+TechStack.propTypes = {
+  title: PropTypes.string.isRequired,
+  icons: PropTypes.array.isRequired
+};
+
+export default TechStack;

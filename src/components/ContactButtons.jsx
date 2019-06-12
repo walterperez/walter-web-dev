@@ -44,8 +44,11 @@ const Icon = styled.img`
   padding: 0;
   margin-right: 2em;
   &:hover {
-    background-color: rgba(250, 250, 250, 0.8);
-    box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.5);
+    filter: invert(72%) sepia(100%) saturate(1000%) hue-rotate(552deg) brightness(100%)
+      contrast(477%);
+  }
+  @media (min-width: 1401px) {
+    margin-right: 10vw;
   }
 `;
 
@@ -55,9 +58,7 @@ export default function ContactButtons() {
       <Link href="https://github.com/walterperez" target="_blank">
         <Icon src={GithubIcon} />
       </Link>
-      <Link
-        href="https://www.linkedin.com/in/walter-christian-perez-hernandez-0730a9184/"
-      >
+      <Link href="https://www.linkedin.com/in/walter-christian-perez-hernandez-0730a9184/">
         <Icon src={LinkedInIcon} />
       </Link>
       <Link href="mailto:walter_cph93@outlook.com" target="_blank">

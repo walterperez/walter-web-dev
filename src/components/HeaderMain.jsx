@@ -50,7 +50,7 @@ const MenuHamburgerList = styled.ul`
   margin: 0;
   padding: 0;
 `;
-const MenuHamburgerListElment = styled.li`
+const MenuHamburgerListElement = styled.li`
   display: block;
   padding: 0.5em 1em;
   text-decoration: none;
@@ -79,7 +79,7 @@ export default class Header extends Component {
   constructor() {
     super();
     this.state = {
-      isActive: false,
+      isActive: false
     };
   }
 
@@ -89,9 +89,9 @@ export default class Header extends Component {
         { name: 'Home', route: '/' },
         { name: 'About', route: '/about' },
         { name: 'Designs', route: '/designs' },
-        { name: 'Books', route: '/books' },
+        { name: 'Books', route: '/books' }
       ],
-      isActive: !this.state.isActive,
+      isActive: !this.state.isActive
     });
   }
 
@@ -115,17 +115,19 @@ export default class Header extends Component {
           <MenuHamburgerList>
             {this.state.listLinks.map((link, index) => (
               <Link to={link.route} style={{ textDecoration: 'none' }}>
-                <MenuHamburgerListElment key={link.name + index}>
+                <MenuHamburgerListElement key={`${link.name}${index}`}>
                   {link.name}
-                </MenuHamburgerListElment>
+                </MenuHamburgerListElement>
               </Link>
             ))}
             <a href="#footer" style={{ textDecoration: 'none' }}>
-              <MenuHamburgerListElment key="conctact">Contact</MenuHamburgerListElment>
+              <MenuHamburgerListElement key="contact">
+                Contact
+              </MenuHamburgerListElement>
             </a>
           </MenuHamburgerList>
         </MenuHamburger>,
-        <BlurBackground onClick={() => this.handleHamburgerClick()} />,
+        <BlurBackground onClick={() => this.handleHamburgerClick()} />
       ]
     );
   }

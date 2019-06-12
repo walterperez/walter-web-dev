@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Pros from '../components/Pros';
 import Projects from '../components/Projects';
 import ContactButtons from '../components/ContactButtons';
-import Reviews from '../components/Reviews';
+// import Reviews from '../components/Reviews';
 import Tools from '../components/Tools';
 // Img
 import mainPhoto from '../img/hero.svg';
@@ -145,9 +145,7 @@ export default function HomePage() {
             animateOnce
           >
             <HomeButtonStart href="mailto:walter_cph93@outlook.com">
-              Contact now!
-              {' '}
-              <PaperIcon src={paperPlaneIcon} />
+              Contact now! <PaperIcon src={paperPlaneIcon} />
             </HomeButtonStart>
           </ScrollAnimation>
 

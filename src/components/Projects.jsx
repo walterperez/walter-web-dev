@@ -7,7 +7,7 @@ import Project from './Project';
 import cuttingGuruProject from '../img/projects/cuttingguru.png';
 import walkerbarbershopProject from '../img/projects/walkerbarbershop.png';
 import walterrepoProject from '../img/projects/walterrepo.png';
-import wd1ProjectProject from '../img/projects/wd1.png';
+// import wd1ProjectProject from '../img/projects/wd1.png';
 import kodflixProject from '../img/projects/kodflix.png';
 import accesibilityLiveProject from '../img/projects/accessibility-live.png';
 import falcon9Project from '../img/projects/Falcon9.png';
@@ -57,6 +57,12 @@ const GridForProjects = styled.div`
     column-gap: 3rem;
     row-gap: 3rem;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  @media (min-width: 1401px) {
+    display: grid;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 `;
 
