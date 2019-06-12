@@ -28,12 +28,14 @@ import iconTs from '../img/icons_tools/ts.jpg';
 
 const ProjectsMainDiv = styled.div`
   background-color: #f7f7f7;
+  z-index: -2;
 `;
 
 const ProjectsContContainers = styled.div`
   margin: 0;
   padding: 0 5%;
-  background: linear-gradient(rgba(250, 250, 250, 0), rgba(0, 0, 0, 0.2)), #ff6969;
+  background: linear-gradient(rgba(250, 250, 250, 0), rgba(0, 0, 0, 0.2)),
+    #ff6969;
   padding: 1em 10% 5% 10%;
 `;
 
@@ -95,7 +97,15 @@ export default function Projects() {
           <Project
             photo={kodflixProject}
             title="Kodflix"
-            stacks={[iconReact, iconNodejs, iconHeroku, iconMongoDB, iconCss3, iconJs, iconCordova]}
+            stacks={[
+              iconReact,
+              iconNodejs,
+              iconHeroku,
+              iconMongoDB,
+              iconCss3,
+              iconJs,
+              iconCordova
+            ]}
             url="https://kodflix-walterperez.herokuapp.com/"
             git="https://github.com/walterperez/kodflix"
             description="Rest full API pretending to clone Netflix, all the movies are fetched from Mongo Atlas DB. I used Express.js for the node server, and React.js for the UI. Credentials for Admin: Email: super-admin@gmail.com Password: super-password"
@@ -103,7 +113,14 @@ export default function Projects() {
           <Project
             photo={accesibilityLiveProject}
             title="Accessibility Live"
-            stacks={[iconReact, iconNodejs, iconHeroku, iconCss3, iconJs, iconCordova]}
+            stacks={[
+              iconReact,
+              iconNodejs,
+              iconHeroku,
+              iconCss3,
+              iconJs,
+              iconCordova
+            ]}
             url="https://accessibilitylive.herokuapp.com/"
             git="https://github.com/kodiri/accessibility-live"
             description="Accessibility Live is a web app that helps people with a disability to plan better their journey, providing information about the working lifts in certain stations. I used Cordova to make the app native for android devices. For the Frontend React, and for the Backend I use Node, with Express.js framework. It fetches data from TFL and Twitter APIs."
@@ -111,7 +128,14 @@ export default function Projects() {
           <Project
             photo={walterrepoProject}
             title="WalterRepo"
-            stacks={[iconReact, iconRedux, iconNodejs, iconFirebase, iconSass, iconJs]}
+            stacks={[
+              iconReact,
+              iconRedux,
+              iconNodejs,
+              iconFirebase,
+              iconSass,
+              iconJs
+            ]}
             url="http://www.walterrepo.co.uk"
             git="https://github.com/walterperez/walterrepo"
             description="This used to be my portfolio, It was the first time I ever used React, I also manage to learn how to use redux when I made it."

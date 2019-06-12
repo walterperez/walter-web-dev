@@ -9,6 +9,10 @@ const TechStackDiv = styled.div`
   height: auto;
   padding: 1em;
   margin-bottom: 2em;
+  transition: all 0.3s ease-in;
+  &:hover {
+    box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.2);
+  }
 `;
 
 const TitleTechStack = styled.h3`

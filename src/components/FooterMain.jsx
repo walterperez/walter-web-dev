@@ -13,7 +13,6 @@ const FooterDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-y: visible;
   &:before {
     content: '';
     display: block;
@@ -21,9 +20,9 @@ const FooterDiv = styled.div`
     top: -1em;
     left: -1em;
     width: 110%;
-    height: 25%;
+    height: 30%;
     background-color: #191919;
-    z-index: 100%;
+    z-index: 1;
     transform: rotate(2deg);
   }
 `;

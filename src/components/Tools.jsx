@@ -31,12 +31,28 @@ const ToolsMainDiv = styled.div`
   justify-content: center;
   align-items: center;
   height: auto;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1em;
+    left: -1em;
+    width: 110%;
+    height: 15%;
+    background-color: #f7f7f7;
+    z-index: -1;
+    transform: rotate(-2deg);
+  }
 `;
 
 const ToolsMainFlex = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
   @media (max-width: 500px) {
     flex-direction: column;
   }
@@ -44,6 +60,7 @@ const ToolsMainFlex = styled.div`
 const ToolsFlex1 = styled.div`
   padding: 2em;
   flex: 1;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,6 +86,7 @@ const ToolsTitle = styled.h2`
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  z-index: 10;
 `;
 
 export default function Tools() {
@@ -76,7 +94,12 @@ export default function Tools() {
     <ToolsMainDiv>
       <ToolsTitle>
         Tools
-        <ScrollAnimation duration={0.5} animateIn="fadeIn" animateOut="fadeOut" animateOnce>
+        <ScrollAnimation
+          duration={0.5}
+          animateIn="fadeIn"
+          animateOut="fadeOut"
+          animateOnce
+        >
           <UnderLine />
         </ScrollAnimation>
       </ToolsTitle>
@@ -84,15 +107,35 @@ export default function Tools() {
         <ToolsFlex1>
           <TechStack
             title="Front End Development"
-            icons={[iconJs, iconCss3, iconHtml5, iconReact, iconRedux, iconSass]}
+            icons={[
+              iconJs,
+              iconCss3,
+              iconHtml5,
+              iconReact,
+              iconRedux,
+              iconSass
+            ]}
           />
-          <TechStack title="Back End Development" icons={[iconNodejs, iconMongoDB, iconHeroku, iconFirebase]} />
+          <TechStack
+            title="Back End Development"
+            icons={[iconNodejs, iconMongoDB, iconHeroku, iconFirebase]}
+          />
         </ToolsFlex1>
         <ToolsFlex1>
-          <TechStack title="Ui/UX Design" icons={[iconAdobeXD, iconPhotoshop, iconIllustrator]} />
+          <TechStack
+            title="Ui/UX Design"
+            icons={[iconAdobeXD, iconPhotoshop, iconIllustrator]}
+          />
           <TechStack
             title="Other tools"
-            icons={[iconGitLogo, iconSlack, iconCordova, iconWordpress, iconVSC, iconPostman]}
+            icons={[
+              iconGitLogo,
+              iconSlack,
+              iconCordova,
+              iconWordpress,
+              iconVSC,
+              iconPostman
+            ]}
           />
         </ToolsFlex1>
       </ToolsMainFlex>

@@ -71,16 +71,23 @@ const StackImg = styled.img`
 const GitHub = styled.a`
   margin-right: 1rem;
   text-decoration: none;
-  color: #66c4ff;
+  color: #f9f9f9;
+  background-color: #66c4ff;
+  padding: 0.5em 1em;
+
   &:hover {
-    color: #4fbcff;
+    color: #f9f9f9;
+    background-color: #50b5f4;
   }
 `;
 const Demo = styled.a`
   text-decoration: none;
-  color: #66c4ff;
+  color: #f9f9f9;
+  padding: 0.5em 1em;
+  background-color: #66c4ff;
   &:hover {
-    color: #4fbcff;
+    color: #f9f9f9;
+    background-color: #50b5f4;
   }
 `;
 
