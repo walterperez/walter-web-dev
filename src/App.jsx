@@ -18,6 +18,7 @@ class App extends Component {
     ReactGA.initialize('UA-140140831-1');
     ReactGA.pageview(window.location.pathname);
     history.listen((location, action) => {
+      window.scrollTo(0, 0); // In every route change scroll to top
       ReactGA.pageview(window.location.pathname);
     });
   }
