@@ -3,13 +3,19 @@ import styled from 'styled-components';
 // Images
 import mainPhoto from '../img/walterperez.jpg';
 import signSVG from '../img/walterSign.svg';
+// Constants
+import { ABOUT_BACKGROUND, ABOUT_HEADER, ABOUT_LINE_1, ABOUT_LINE_2 } from "../styles/constants";
 
 const MainDivAbout = styled.div`
   width: 100%;
   position: relative;
   min-height: 100vh;
-  background-color: #4db4f5;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.35));
+  background-color: ${ABOUT_BACKGROUND};
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.15)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +57,7 @@ const ProfileDescription = styled.div`
 `;
 
 const TitleAbout = styled.h3`
-  color: rgba(0, 0, 0, 0.8);
+  color: ${ABOUT_HEADER};
   font-size: 1.3em;
   text-align: center;
   margin-bottom: 2em;
@@ -59,12 +65,13 @@ const TitleAbout = styled.h3`
   position: relative;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 33%;
     width: 33%;
-    box-shadow: 0 0 0 1px rgba(0, 200, 100, 0.7), 0 6px 0 2px rgba(0, 200, 100, 0.9);
+    box-shadow: 0 0 0 1px ${ABOUT_LINE_1},
+      0 6px 0 2px ${ABOUT_LINE_2};
   }
 `;
 

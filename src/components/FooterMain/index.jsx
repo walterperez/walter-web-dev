@@ -3,19 +3,20 @@ import styled from "styled-components";
 // Components
 import ContactButtons from "../ContactButtons";
 // Constants
-import { PRIMARY_COLOR } from "../../styles/constants"
+import { FOOTER_BACKGROUND, FOOTER_FONTS } from "../../styles/constants";
 
 const FooterDiv = styled.div`
   width: 100%;
   margin: 0;
   padding: 3em 3em;
   position: relative;
-  background-color: #191919;
-  color: ${PRIMARY_COLOR};
+  background-color: ${FOOTER_BACKGROUND};
+  color: ${FOOTER_FONTS};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   &:before {
     content: "";
     display: block;
@@ -24,7 +25,7 @@ const FooterDiv = styled.div`
     left: -1em;
     width: 110%;
     height: 30%;
-    background-color: #191919;
+    background-color: ${FOOTER_BACKGROUND};
     z-index: 1;
     transform: rotate(2deg);
   }

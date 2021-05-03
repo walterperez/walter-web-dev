@@ -50,7 +50,8 @@ function Pro({ icon, title, description }) {
     >
       <ProContainer>
         <ProIcon>
-          <img src={icon} alt="chating icon" />
+          {/* <img src={icon} alt="chating icon" /> */}
+          {icon}
         </ProIcon>
         <ProDescription>
           <ProTitle>{title}</ProTitle>

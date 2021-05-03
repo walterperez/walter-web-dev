@@ -5,7 +5,13 @@ import styled from "styled-components";
 import logo from "../../img/logo.svg";
 import hamburgerIconImg from "../../img/icons_svg/hamburgerIcon.svg";
 // Constants
-import { PRIMARY_COLOR, PRIMARY_COLOR_DARK, SECCONDARY_COLOR } from "../../styles/constants";
+import {
+  SECCONDARY_COLOR_DARK,
+  NAV_BAR_BACKGROUND,
+  NAV_BAR_MENU,
+  NAV_BAR_MENU_HOVER,
+  NAV_BAR_MENU_COLOR,
+} from "../../styles/constants";
 
 const HeaderMainDiv = styled.header`
   position: fixed;
@@ -13,7 +19,7 @@ const HeaderMainDiv = styled.header`
   z-index: 10;
   width: 100%;
   padding: 0 1.5em;
-  background-color: ${PRIMARY_COLOR};
+  background-color: ${NAV_BAR_BACKGROUND};
   height: 3em;
   display: flex;
   flex-direction: row;
@@ -44,7 +50,7 @@ const MenuHamburger = styled.div`
   height: 100%;
   min-width: 250px;
   z-index: 100;
-  background-color: ${PRIMARY_COLOR};
+  background-color: ${NAV_BAR_MENU};
 `;
 
 const MenuHamburgerList = styled.ul`
@@ -53,17 +59,19 @@ const MenuHamburgerList = styled.ul`
   padding: 0;
 `;
 const MenuHamburgerListElement = styled.li`
+  color: ${NAV_BAR_MENU_COLOR};
   display: block;
   padding: 0.5em 1em;
   text-decoration: none;
   font-weight: bolder;
   text-align: center;
   transition: all linear 0.3s;
+
   &:hover {
-    background-color: ${PRIMARY_COLOR_DARK};
+    background-color: ${NAV_BAR_MENU_HOVER};
     color: white;
     cursor: pointer;
-    border-right: solid 5px ${SECCONDARY_COLOR};
+    border-right: solid 5px ${SECCONDARY_COLOR_DARK};
   }
 `;
 const BlurBackground = styled.div`

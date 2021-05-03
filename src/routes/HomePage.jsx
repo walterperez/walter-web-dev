@@ -16,4 +16,4 @@ export default function HomePage() {
       {/* WIP <Reviews /> */}
     </React.Fragment>
   );
-}
+};

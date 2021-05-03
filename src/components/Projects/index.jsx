@@ -3,11 +3,11 @@ import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
 // Components
 import Project from "../Project";
+import UnderLine from "../shared/underline";
 // Projects
 import cuttingGuruProject from "../../img/projects/cuttingguru.png";
 import walkerbarbershopProject from "../../img/projects/walkerbarbershop.png";
 import walterrepoProject from "../../img/projects/walterrepo.png";
-// import wd1ProjectProject from '../../img/projects/wd1.png';
 import kodflixProject from "../../img/projects/kodflix.png";
 import accesibilityLiveProject from "../../img/projects/accessibility-live.png";
 import falcon9Project from "../../img/projects/Falcon9.png";
@@ -26,10 +26,14 @@ import iconFirebase from "../../img/icons_tools/firebase.png";
 import iconCordova from "../../img/icons_tools/Cordova.png";
 import iconTs from "../../img/icons_tools/ts.jpg";
 // Constants
-import { PRIMARY_COLOR, PRIMARY_COLOR_DARK } from "../../styles/constants";
+import {
+  HERO_SECTION_PROJECTS_BACKGROUND,
+  HERO_SECTION_PROJECTS_HEADER,
+  HERO_SECTION_WHY_BACKGROUND,
+} from "../../styles/constants";
 
 const ProjectsMainDiv = styled.div`
-  background-color: #f7f7f7;
+  background-color: ${HERO_SECTION_WHY_BACKGROUND};
   z-index: -2;
 `;
 
@@ -37,7 +41,7 @@ const ProjectsContContainers = styled.div`
   margin: 0;
   padding: 0 5%;
   background: linear-gradient(rgba(250, 250, 250, 0), rgba(0, 0, 0, 0.2)),
-    #ff6969;
+    ${HERO_SECTION_PROJECTS_BACKGROUND};
   padding: 1em 10% 5% 10%;
 `;
 
@@ -48,7 +52,7 @@ const ProjectTitle = styled.h2`
   align-items: center;
   text-align: center;
   font-size: 1.8rem;
-  color: rgba(250, 250, 250, 0.9);
+  color: ${HERO_SECTION_PROJECTS_HEADER};
   text-transform: uppercase;
   letter-spacing: 0.2em;
   margin: 0;
@@ -68,20 +72,6 @@ const GridForProjects = styled.div`
     row-gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
-`;
-
-const UnderLine = styled.div`
-  position: relative;
-  flex: 1;
-  width: 100px;
-  height: 5px;
-  border-radius: 10px;
-  background: linear-gradient(
-    to right,
-    ${PRIMARY_COLOR_DARK},
-    ${PRIMARY_COLOR}
-  );
-  z-index: 10;
 `;
 
 export default function Projects() {

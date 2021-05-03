@@ -1,7 +1,24 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 import Particles from "react-tsparticles";
-//
-import "./styles.css";
+// Constants
+import {
+  START_GRADIENT_CANVAS,
+  END_GRADIENT_CANVAS,
+} from "../../styles/constants";
+
+const CanvasWrapper = styled.div`
+  #tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      ${START_GRADIENT_CANVAS},
+      ${END_GRADIENT_CANVAS}
+    );
+  }
+`;
 
 const particlesConfig = {
   fpsLimit: 60,
@@ -86,23 +103,24 @@ export default class CanvasRender extends Component {
   }
 
   particlesInit(main) {
-    console.log(main);
-
+    // console.log(main);
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
   }
 
   particlesLoaded(container) {
-    console.log(container);
+    // console.log(container);
   }
 
   render() {
     return (
-      <Particles
-        id="tsparticles"
-        options={particlesConfig}
-        init={this.particlesInit}
-        loaded={this.particlesLoaded}
-      />
+      <CanvasWrapper>
+        <Particles
+          id="tsparticles"
+          options={particlesConfig}
+          init={this.particlesInit}
+          loaded={this.particlesLoaded}
+        />
+      </CanvasWrapper>
     );
   }
 }

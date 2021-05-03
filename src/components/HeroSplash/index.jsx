@@ -6,6 +6,8 @@ import ContactButtons from "../ContactButtons";
 import CanvasRender from "../CanvasRender";
 // Img
 import paperPlaneIcon from "../../img/icons_svg/sent-mail.svg";
+// Constants
+import { HERO_BUTTON_1, HERO_BUTTON_2 } from "../../styles/constants";
 
 const HomeContainer = styled.div`
   position: relative;
@@ -55,7 +57,15 @@ const HomeButtonStart = styled.a`
   flex: 1;
   font-size: 1em;
   color: rgb(254, 255, 255);
-  background: linear-gradient(155deg, #b3c100, #9aa500);
+  background: linear-gradient(
+    
+    155deg,
+  
+     ${HERO_BUTTON_2},
+  
+     ${HERO_BUTTON_1}
+  
+  );
   text-decoration: none;
   border: 0;
   font-weight: bolder;
@@ -66,7 +76,7 @@ const HomeButtonStart = styled.a`
   box-shadow: 0 5px 15px 1px rgba(150, 200, 100, 0.3);
 
   &:hover {
-    background: linear-gradient(#b3c100, #9aa500);
+    background: linear-gradient(${HERO_BUTTON_1}, ${HERO_BUTTON_2});
     box-shadow: 0 5px 15px 5px rgba(150, 200, 100, 0.55);
     transform: translateY(-50%);
     cursor: pointer;

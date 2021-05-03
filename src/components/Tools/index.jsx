@@ -3,6 +3,7 @@ import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
 // Components
 import TechStack from "../TechStack";
+import UnderLine from "../shared/underline";
 // Icons
 import iconHtml5 from "../../img/icons_tools/html5.png";
 import iconNodejs from "../../img/icons_tools/nodejs.png";
@@ -24,10 +25,13 @@ import iconGitLogo from "../../img/icons_tools/gitlogo.png";
 import iconVSC from "../../img/icons_tools/vsc.png";
 import iconPostman from "../../img/icons_tools/postman.png";
 // Constants
-import { PRIMARY_COLOR, PRIMARY_COLOR_DARK} from "../../styles/constants";
+import {
+  TOOLS_SECTION_BACKGROUND,
+  TOOLS_SECTION_HEADER,
+} from "../../styles/constants";
 
 const ToolsMainDiv = styled.div`
-  background-color: #f7f7f7;
+  background-color: ${TOOLS_SECTION_BACKGROUND};
   padding: 2em 2em 0 2em;
   justify-content: center;
   align-items: center;
@@ -43,7 +47,7 @@ const ToolsMainDiv = styled.div`
     left: -1em;
     width: 110%;
     height: 15%;
-    background-color: #f7f7f7;
+    background-color: ${TOOLS_SECTION_BACKGROUND};
     z-index: -1;
     transform: rotate(-2deg);
   }
@@ -67,26 +71,13 @@ const ToolsFlex1 = styled.div`
   justify-content: center;
   align-items: center;
 `;
-const UnderLine = styled.div`
-  position: relative;
-  width: 100px;
-  height: 5px;
-  border-radius: 10px;
-  background: linear-gradient(
-    to right,
-    ${PRIMARY_COLOR_DARK},
-    ${PRIMARY_COLOR}
-  );
-  z-index: 10;
-`;
-
 const ToolsTitle = styled.h2`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: rgba(0, 0, 0, 0.8);
+  color: ${TOOLS_SECTION_HEADER};
   margin-bottom: 2rem;
   font-size: 1.8rem;
   text-transform: uppercase;

@@ -14,13 +14,19 @@ import al8design from '../img/logo-desings/WLogo.png';
 import al9design from '../img/draws/GUY.png';
 import al10design from '../img/draws/happyFridge.png';
 import al11design from '../img/draws/walterFirstDraw.png';
+// Constants
+import { DESIGNS_HEADER, DESIGNS_BACKGROUND } from "../styles/constants";
 
 const MainDivDesigns = styled.div`
   width: 100%;
   position: relative;
   min-height: 100vh;
-  background-color: #4db4f5;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.35));
+  background-color: ${DESIGNS_BACKGROUND};
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.15)
+  );
   padding: 3em 2em;
 `;
 
@@ -63,7 +69,7 @@ const Design = styled.img`
 `;
 
 const TitleDesigns = styled.h3`
-  color: rgba(250, 250, 250, 0.8);
+  color: ${DESIGNS_HEADER};
   font-size: 1.5em;
   text-align: center;
   margin-bottom: 2em;

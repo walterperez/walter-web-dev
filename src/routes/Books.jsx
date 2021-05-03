@@ -8,13 +8,19 @@ import book4 from '../img/books/book (4).JPG';
 import book5 from '../img/books/book (5).JPG';
 import book6 from '../img/books/book (6).JPG';
 import book7 from '../img/books/book (7).JPG';
+// Constants
+import { BOOKS_HEADER, BOOKS_BACKGROUND } from "../styles/constants";
 
 const MainDivDesigns = styled.div`
   width: 100%;
   position: relative;
   min-height: 100vh;
-  background-color: #4db4f5;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.35));
+  background-color: ${BOOKS_BACKGROUND};
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.35)
+  );
   padding: 3em 2em;
 `;
 
@@ -27,7 +33,6 @@ const MainContainer = styled.div`
   column-count: 4;
   column-gap: 1em;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.3);
   background-color: rgba(250, 250, 250, 0.5);
   padding: 1em 1em 0 1em;
 
@@ -57,7 +62,7 @@ const Design = styled.img`
 `;
 
 const TitleDesigns = styled.h3`
-  color: rgba(250, 250, 250, 0.8);
+  color: ${BOOKS_HEADER};
   font-size: 1.5em;
   text-align: center;
   margin-bottom: 2em;
