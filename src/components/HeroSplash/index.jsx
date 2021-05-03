@@ -129,6 +129,12 @@ export default function HeroSplash() {
             animateIn="fadeInLeftBig"
             animateOut="fadeOut"
             animateOnce
+            style={{
+              width: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
           >
             <ContactButtons />
           </ScrollAnimation>
