@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import GithubIcon from '../img/icons_svg/github-logo.svg';
-import LinkedInIcon from '../img/icons_svg/linkedin.svg';
-import MailIcon from '../img/icons_svg/mail.svg';
+import React from "react";
+import styled from "styled-components";
+import GithubIcon from "../../img/icons_svg/github-logo.svg";
+import LinkedInIcon from "../../img/icons_svg/linkedin.svg";
+import MailIcon from "../../img/icons_svg/mail.svg";
 
 const ContactButtonsDiv = styled.div`
   flex: 1;
@@ -44,8 +44,8 @@ const Icon = styled.img`
   padding: 0;
   margin-right: 2em;
   &:hover {
-    filter: invert(72%) sepia(100%) saturate(1000%) hue-rotate(552deg) brightness(100%)
-      contrast(477%);
+    filter: invert(72%) sepia(100%) saturate(1000%) hue-rotate(552deg)
+      brightness(100%) contrast(477%);
   }
   @media (min-width: 1401px) {
     margin-right: 10vw;

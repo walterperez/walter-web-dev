@@ -1,30 +1,30 @@
-import React from 'react';
-import styled from 'styled-components';
-import ScrollAnimation from 'react-animate-on-scroll';
+import React from "react";
+import styled from "styled-components";
+import ScrollAnimation from "react-animate-on-scroll";
 // Components
-import Project from './Project';
+import Project from "../Project";
 // Projects
-import cuttingGuruProject from '../img/projects/cuttingguru.png';
-import walkerbarbershopProject from '../img/projects/walkerbarbershop.png';
-import walterrepoProject from '../img/projects/walterrepo.png';
-// import wd1ProjectProject from '../img/projects/wd1.png';
-import kodflixProject from '../img/projects/kodflix.png';
-import accesibilityLiveProject from '../img/projects/accessibility-live.png';
-import falcon9Project from '../img/projects/Falcon9.png';
+import cuttingGuruProject from "../../img/projects/cuttingguru.png";
+import walkerbarbershopProject from "../../img/projects/walkerbarbershop.png";
+import walterrepoProject from "../../img/projects/walterrepo.png";
+// import wd1ProjectProject from '../../img/projects/wd1.png';
+import kodflixProject from "../../img/projects/kodflix.png";
+import accesibilityLiveProject from "../../img/projects/accessibility-live.png";
+import falcon9Project from "../../img/projects/Falcon9.png";
 // Icons
-import iconHtml5 from '../img/icons_tools/html5.png';
-import iconNodejs from '../img/icons_tools/nodejs.png';
-import iconReact from '../img/icons_tools/react.png';
-import iconCss3 from '../img/icons_tools/css-3.png';
-import iconJs from '../img/icons_tools/js.png';
-import iconRedux from '../img/icons_tools/redux.png';
-import iconWordpress from '../img/icons_tools/wordpress.png';
-import iconSass from '../img/icons_tools/sass.jpg';
-import iconMongoDB from '../img/icons_tools/mongodb.png';
-import iconHeroku from '../img/icons_tools/heroku.png';
-import iconFirebase from '../img/icons_tools/firebase.png';
-import iconCordova from '../img/icons_tools/Cordova.png';
-import iconTs from '../img/icons_tools/ts.jpg';
+import iconHtml5 from "../../img/icons_tools/html5.png";
+import iconNodejs from "../../img/icons_tools/nodejs.png";
+import iconReact from "../../img/icons_tools/react.png";
+import iconCss3 from "../../img/icons_tools/css-3.png";
+import iconJs from "../../img/icons_tools/js.png";
+import iconRedux from "../../img/icons_tools/redux.png";
+import iconWordpress from "../../img/icons_tools/wordpress.png";
+import iconSass from "../../img/icons_tools/sass.jpg";
+import iconMongoDB from "../../img/icons_tools/mongodb.png";
+import iconHeroku from "../../img/icons_tools/heroku.png";
+import iconFirebase from "../../img/icons_tools/firebase.png";
+import iconCordova from "../../img/icons_tools/Cordova.png";
+import iconTs from "../../img/icons_tools/ts.jpg";
 
 const ProjectsMainDiv = styled.div`
   background-color: #f7f7f7;
@@ -104,7 +104,7 @@ export default function Projects() {
               iconMongoDB,
               iconCss3,
               iconJs,
-              iconCordova
+              iconCordova,
             ]}
             url="https://kodflix-walterperez.herokuapp.com/"
             git="https://github.com/walterperez/kodflix"
@@ -119,7 +119,7 @@ export default function Projects() {
               iconHeroku,
               iconCss3,
               iconJs,
-              iconCordova
+              iconCordova,
             ]}
             url="https://accessibilitylive.herokuapp.com/"
             git="https://github.com/kodiri/accessibility-live"
@@ -134,7 +134,7 @@ export default function Projects() {
               iconNodejs,
               iconFirebase,
               iconSass,
-              iconJs
+              iconJs,
             ]}
             url="http://www.walterrepo.co.uk"
             git="https://github.com/walterperez/walterrepo"

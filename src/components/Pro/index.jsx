@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import ScrollAnimation from 'react-animate-on-scroll';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import ScrollAnimation from "react-animate-on-scroll";
 
 // Styles
 const ProContainer = styled.div`
@@ -64,7 +64,7 @@ function Pro({ icon, title, description }) {
 Pro.propTypes = {
   icon: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired
+  description: PropTypes.string.isRequired,
 };
 
 export default Pro;

@@ -1,29 +1,28 @@
-import React from 'react';
-import styled from 'styled-components';
-import ScrollAnimation from 'react-animate-on-scroll';
+import React from "react";
+import styled from "styled-components";
+import ScrollAnimation from "react-animate-on-scroll";
 // Components
-import TechStack from './TechStack';
-
+import TechStack from "../TechStack";
 // Icons
-import iconHtml5 from '../img/icons_tools/html5.png';
-import iconNodejs from '../img/icons_tools/nodejs.png';
-import iconReact from '../img/icons_tools/react.png';
-import iconCss3 from '../img/icons_tools/css-3.png';
-import iconJs from '../img/icons_tools/js.png';
-import iconRedux from '../img/icons_tools/redux.png';
-import iconWordpress from '../img/icons_tools/wordpress.png';
-import iconSass from '../img/icons_tools/sass.jpg';
-import iconMongoDB from '../img/icons_tools/mongodb.png';
-import iconHeroku from '../img/icons_tools/heroku.png';
-import iconFirebase from '../img/icons_tools/firebase.png';
-import iconCordova from '../img/icons_tools/Cordova.png';
-import iconAdobeXD from '../img/icons_tools/adobexd.png';
-import iconIllustrator from '../img/icons_tools/illustrator.png';
-import iconPhotoshop from '../img/icons_tools/photoshop.png';
-import iconSlack from '../img/icons_tools/slack.jpg';
-import iconGitLogo from '../img/icons_tools/gitlogo.png';
-import iconVSC from '../img/icons_tools/vsc.png';
-import iconPostman from '../img/icons_tools/postman.png';
+import iconHtml5 from "../../img/icons_tools/html5.png";
+import iconNodejs from "../../img/icons_tools/nodejs.png";
+import iconReact from "../../img/icons_tools/react.png";
+import iconCss3 from "../../img/icons_tools/css-3.png";
+import iconJs from "../../img/icons_tools/js.png";
+import iconRedux from "../../img/icons_tools/redux.png";
+import iconWordpress from "../../img/icons_tools/wordpress.png";
+import iconSass from "../../img/icons_tools/sass.jpg";
+import iconMongoDB from "../../img/icons_tools/mongodb.png";
+import iconHeroku from "../../img/icons_tools/heroku.png";
+import iconFirebase from "../../img/icons_tools/firebase.png";
+import iconCordova from "../../img/icons_tools/Cordova.png";
+import iconAdobeXD from "../../img/icons_tools/adobexd.png";
+import iconIllustrator from "../../img/icons_tools/illustrator.png";
+import iconPhotoshop from "../../img/icons_tools/photoshop.png";
+import iconSlack from "../../img/icons_tools/slack.jpg";
+import iconGitLogo from "../../img/icons_tools/gitlogo.png";
+import iconVSC from "../../img/icons_tools/vsc.png";
+import iconPostman from "../../img/icons_tools/postman.png";
 
 const ToolsMainDiv = styled.div`
   background-color: #f7f7f7;
@@ -35,7 +34,7 @@ const ToolsMainDiv = styled.div`
   width: 100%;
   z-index: 1;
   &:before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: -1em;
@@ -113,7 +112,7 @@ export default function Tools() {
               iconHtml5,
               iconReact,
               iconRedux,
-              iconSass
+              iconSass,
             ]}
           />
           <TechStack
@@ -134,7 +133,7 @@ export default function Tools() {
               iconCordova,
               iconWordpress,
               iconVSC,
-              iconPostman
+              iconPostman,
             ]}
           />
         </ToolsFlex1>

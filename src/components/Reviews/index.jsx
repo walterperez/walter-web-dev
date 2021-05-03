@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import Reviewer from './Reviewer';
+import React, { Component } from "react";
+import styled from "styled-components";
+import Reviewer from "../Reviewer";
 // Photos
-import photo1 from '../img/Reviews/willSmith.jpg';
-import photo2 from '../img/Reviews/badBunny.jpg';
+import photo1 from "../../img/Reviews/willSmith.jpg";
+import photo2 from "../../img/Reviews/badBunny.jpg";
 
 const MainContainer = styled.div`
   width: 100%;

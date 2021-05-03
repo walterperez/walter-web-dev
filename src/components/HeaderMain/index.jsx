@@ -1,9 +1,9 @@
-import React, { Component, Fragment } from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import React, { Component, Fragment } from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 // Images
-import logo from '../logo.svg';
-import hamburgerIconImg from '../img/icons_svg/hamburgerIcon.svg';
+import logo from "../../img/logo.svg";
+import hamburgerIconImg from "../../img/icons_svg/hamburgerIcon.svg";
 
 const HeaderMainDiv = styled.header`
   position: fixed;
@@ -79,19 +79,19 @@ export default class Header extends Component {
   constructor() {
     super();
     this.state = {
-      isActive: false
+      isActive: false,
     };
   }
 
   handleHamburgerClick() {
     this.setState({
       listLinks: [
-        { name: 'Home', route: '/' },
-        { name: 'About', route: '/about' },
-        { name: 'Designs', route: '/designs' },
-        { name: 'Books', route: '/books' }
+        { name: "Home", route: "/" },
+        { name: "About", route: "/about" },
+        { name: "Designs", route: "/designs" },
+        { name: "Books", route: "/books" },
       ],
-      isActive: !this.state.isActive
+      isActive: !this.state.isActive,
     });
   }
 
@@ -114,20 +114,20 @@ export default class Header extends Component {
         <MenuHamburger>
           <MenuHamburgerList>
             {this.state.listLinks.map((link, index) => (
-              <Link to={link.route} style={{ textDecoration: 'none' }}>
+              <Link to={link.route} style={{ textDecoration: "none" }}>
                 <MenuHamburgerListElement key={`${link.name}${index}`}>
                   {link.name}
                 </MenuHamburgerListElement>
               </Link>
             ))}
-            <a href="#footer" style={{ textDecoration: 'none' }}>
+            <a href="#footer" style={{ textDecoration: "none" }}>
               <MenuHamburgerListElement key="contact">
                 Contact
               </MenuHamburgerListElement>
             </a>
           </MenuHamburgerList>
         </MenuHamburger>,
-        <BlurBackground onClick={() => this.handleHamburgerClick()} />
+        <BlurBackground onClick={() => this.handleHamburgerClick()} />,
       ]
     );
   }

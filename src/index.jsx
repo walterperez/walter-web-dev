@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-import 'animate.css/animate.min.css';
-import './index.css';
+import "animate.css/animate.min.css";
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

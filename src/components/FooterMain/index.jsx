@@ -1,6 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import ContactButtons from './ContactButtons';
+import React from "react";
+import styled from "styled-components";
+// Components
+import ContactButtons from "../ContactButtons";
 
 const FooterDiv = styled.div`
   width: 100%;
@@ -14,7 +15,7 @@ const FooterDiv = styled.div`
   justify-content: center;
   align-items: center;
   &:before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: -1em;

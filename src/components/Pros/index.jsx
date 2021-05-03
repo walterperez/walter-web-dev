@@ -1,16 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
-import ScrollAnimation from 'react-animate-on-scroll';
-import Pro from './Pro';
+import React from "react";
+import styled from "styled-components";
+import ScrollAnimation from "react-animate-on-scroll";
+import Pro from "../Pro";
 // Images
-import TopWave from '../img/Home_Bckground/wave-top-pink2.svg';
+import TopWave from "../../img/Home_Bckground/wave-top-pink2.svg";
 // Icons 2
-import chatIcon from '../img/icons_svg/chat.svg';
-import loupeIcon from '../img/icons_svg/loupe.svg';
-import trophyIcon from '../img/icons_svg/trophy.svg';
-import checkedIcon from '../img/icons_svg/checked.svg';
-import ideaIcon from '../img/icons_svg/idea.svg';
-import brushIcon from '../img/icons_svg/paint-brush.svg';
+import chatIcon from "../../img/icons_svg/chat.svg";
+import loupeIcon from "../../img/icons_svg/loupe.svg";
+import trophyIcon from "../../img/icons_svg/trophy.svg";
+import checkedIcon from "../../img/icons_svg/checked.svg";
+import ideaIcon from "../../img/icons_svg/idea.svg";
+import brushIcon from "../../img/icons_svg/paint-brush.svg";
 // Styles
 const ProsDiv = styled.div`
   width: 100%;

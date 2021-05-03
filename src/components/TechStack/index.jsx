@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import ScrollAnimation from 'react-animate-on-scroll';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const TechStackDiv = styled.div`
   flex: 1;
@@ -61,7 +61,7 @@ function TechStack({ title, icons }) {
 
 TechStack.propTypes = {
   title: PropTypes.string.isRequired,
-  icons: PropTypes.array.isRequired
+  icons: PropTypes.array.isRequired,
 };
 
 export default TechStack;
