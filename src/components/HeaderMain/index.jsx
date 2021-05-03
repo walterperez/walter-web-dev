@@ -4,6 +4,8 @@ import styled from "styled-components";
 // Images
 import logo from "../../img/logo.svg";
 import hamburgerIconImg from "../../img/icons_svg/hamburgerIcon.svg";
+// Constants
+import { PRIMARY_COLOR, PRIMARY_COLOR_DARK, SECCONDARY_COLOR } from "../../styles/constants";
 
 const HeaderMainDiv = styled.header`
   position: fixed;
@@ -11,7 +13,7 @@ const HeaderMainDiv = styled.header`
   z-index: 10;
   width: 100%;
   padding: 0 1.5em;
-  background-color: #4fbcff;
+  background-color: ${PRIMARY_COLOR};
   height: 3em;
   display: flex;
   flex-direction: row;
@@ -42,7 +44,7 @@ const MenuHamburger = styled.div`
   height: 100%;
   min-width: 250px;
   z-index: 100;
-  background-color: #4fbcff;
+  background-color: ${PRIMARY_COLOR};
 `;
 
 const MenuHamburgerList = styled.ul`
@@ -58,10 +60,10 @@ const MenuHamburgerListElement = styled.li`
   text-align: center;
   transition: all linear 0.3s;
   &:hover {
-    background-color: #0d8bd9;
+    background-color: ${PRIMARY_COLOR_DARK};
     color: white;
     cursor: pointer;
-    border-right: solid 5px #b0bd00;
+    border-right: solid 5px ${SECCONDARY_COLOR};
   }
 `;
 const BlurBackground = styled.div`

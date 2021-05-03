@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 // Components
 import ContactButtons from "../ContactButtons";
+// Constants
+import { PRIMARY_COLOR } from "../../styles/constants"
 
 const FooterDiv = styled.div`
   width: 100%;
@@ -9,7 +11,7 @@ const FooterDiv = styled.div`
   padding: 3em 3em;
   position: relative;
   background-color: #191919;
-  color: #0578b8;
+  color: ${PRIMARY_COLOR};
   display: flex;
   flex-direction: column;
   justify-content: center;

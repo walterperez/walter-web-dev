@@ -3,9 +3,8 @@ import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
 // Components
 import ContactButtons from "../ContactButtons";
+import CanvasRender from "../CanvasRender";
 // Img
-import mainPhoto from "../../img/hero.svg";
-import waveBackground from "../../img/Home_Bckground/waveBackground2.png";
 import paperPlaneIcon from "../../img/icons_svg/sent-mail.svg";
 
 const HomeContainer = styled.div`
@@ -13,37 +12,13 @@ const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
   min-height: 100vh;
   height: auto;
   padding: 0;
   margin: 0;
   overflow: hidden;
-
-  &:before {
-    content: "";
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    top: -50%;
-    left: -50%;
-    z-index: -1;
-    background: url(${waveBackground}) center center/1500px 1600px no-repeat,
-      linear-gradient(to right, #007cc2 0%, #0e70ae 100%);
-    -webkit-transform: rotate(30deg);
-    transform: rotate(-10deg);
-  }
-
-  @media (min-width: 801px) {
-    flex-direction: row;
-    padding: 0 10%;
-
-    &:before {
-      background: url(${waveBackground}) center center/3000px 2000px no-repeat,
-        linear-gradient(to right, #007cc2 0%, #0e70ae 100%);
-    }
-  }
 `;
 
 const HomeMainLetters = styled.div`
@@ -103,60 +78,52 @@ const PaperIcon = styled.img`
   height: 1rem;
 `;
 
-const HomeMainImg = styled.img`
-  flex: 1;
-  width: 100%;
-  height: auto;
-  @media (min-width: 1201px) {
-    max-width: 50%;
-    max-height: 100%;
-  }
-`;
-
 export default function HeroSplash() {
   return (
-    <HomeContainer>
-      <HomeMainLetters>
-        <ScrollAnimation
-          duration={0.5}
-          animateIn="fadeInLeftBig"
-          animateOut="fadeOut"
-          animateOnce
-        >
-          <HomeTitle>Walter Hernandez</HomeTitle>
-        </ScrollAnimation>
-        <ScrollAnimation
-          delay={500}
-          duration={0.5}
-          animateIn="fadeInLeftBig"
-          animateOut="fadeOut"
-          animateOnce
-        >
-          <HomeSubtitle>Full Stack Web Developer</HomeSubtitle>
-        </ScrollAnimation>
-        <ScrollAnimation
-          delay={1000}
-          duration={0.5}
-          animateIn="fadeInLeftBig"
-          animateOut="fadeOut"
-          animateOnce
-        >
-          <HomeButtonStart href="mailto:walter_cph93@outlook.com">
-            Contact now! <PaperIcon src={paperPlaneIcon} />
-          </HomeButtonStart>
-        </ScrollAnimation>
+    <>
+      <CanvasRender />
+      <HomeContainer>
+        <HomeMainLetters>
+          <ScrollAnimation
+            duration={0.5}
+            animateIn="fadeInLeftBig"
+            animateOut="fadeOut"
+            animateOnce
+          >
+            <HomeTitle>Walter Hernandez</HomeTitle>
+          </ScrollAnimation>
+          <ScrollAnimation
+            delay={500}
+            duration={0.5}
+            animateIn="fadeInLeftBig"
+            animateOut="fadeOut"
+            animateOnce
+          >
+            <HomeSubtitle>Full Stack Web Developer</HomeSubtitle>
+          </ScrollAnimation>
+          <ScrollAnimation
+            delay={1000}
+            duration={0.5}
+            animateIn="fadeInLeftBig"
+            animateOut="fadeOut"
+            animateOnce
+          >
+            <HomeButtonStart href="mailto:walter_cph93@outlook.com">
+              Contact now! <PaperIcon src={paperPlaneIcon} />
+            </HomeButtonStart>
+          </ScrollAnimation>
 
-        <ScrollAnimation
-          delay={1500}
-          duration={0.5}
-          animateIn="fadeInLeftBig"
-          animateOut="fadeOut"
-          animateOnce
-        >
-          <ContactButtons />
-        </ScrollAnimation>
-      </HomeMainLetters>
-      <HomeMainImg src={mainPhoto} alt="Main Img" />
-    </HomeContainer>
+          <ScrollAnimation
+            delay={1500}
+            duration={0.5}
+            animateIn="fadeInLeftBig"
+            animateOut="fadeOut"
+            animateOnce
+          >
+            <ContactButtons />
+          </ScrollAnimation>
+        </HomeMainLetters>
+      </HomeContainer>
+    </>
   );
 }

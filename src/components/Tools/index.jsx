@@ -23,6 +23,8 @@ import iconSlack from "../../img/icons_tools/slack.jpg";
 import iconGitLogo from "../../img/icons_tools/gitlogo.png";
 import iconVSC from "../../img/icons_tools/vsc.png";
 import iconPostman from "../../img/icons_tools/postman.png";
+// Constants
+import { PRIMARY_COLOR, PRIMARY_COLOR_DARK} from "../../styles/constants";
 
 const ToolsMainDiv = styled.div`
   background-color: #f7f7f7;
@@ -70,7 +72,11 @@ const UnderLine = styled.div`
   width: 100px;
   height: 5px;
   border-radius: 10px;
-  background: linear-gradient(to right, #66c4ff, #4fbcff);
+  background: linear-gradient(
+    to right,
+    ${PRIMARY_COLOR_DARK},
+    ${PRIMARY_COLOR}
+  );
   z-index: 10;
 `;
 

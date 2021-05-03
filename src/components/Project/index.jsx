@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ScrollAnimation from 'react-animate-on-scroll';
+// Constants
+import { PRIMARY_COLOR, PRIMARY_COLOR_DARK } from "../../styles/constants";
 
 const ProjectContainer = styled.div`
   transition: all 0.3s ease-in;
@@ -46,7 +48,7 @@ const Description = styled.div`
   justify-content: center;
 `;
 const Title = styled.h3`
-  color: #0578b8;
+  color: ${PRIMARY_COLOR_DARK};
   display: inline-block;
   font-size: 1.3rem;
   margin-top: 1rem;
@@ -72,22 +74,22 @@ const GitHub = styled.a`
   margin-right: 1rem;
   text-decoration: none;
   color: #f9f9f9;
-  background-color: #66c4ff;
+  background-color: ${PRIMARY_COLOR};
   padding: 0.5em 1em;
 
   &:hover {
     color: #f9f9f9;
-    background-color: #50b5f4;
+    background-color: ${PRIMARY_COLOR_DARK};
   }
 `;
 const Demo = styled.a`
   text-decoration: none;
   color: #f9f9f9;
   padding: 0.5em 1em;
-  background-color: #66c4ff;
+  background-color: ${PRIMARY_COLOR};
   &:hover {
     color: #f9f9f9;
-    background-color: #50b5f4;
+    background-color: ${PRIMARY_COLOR_DARK};
   }
 `;
 

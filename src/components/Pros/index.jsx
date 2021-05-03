@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
 import Pro from "../Pro";
-// Images
-import TopWave from "../../img/Home_Bckground/wave-top-pink2.svg";
+// Components
+import WaveTopPink2 from "../../img/Home_Bckground/waveTopPink2";
 // Icons 2
 import chatIcon from "../../img/icons_svg/chat.svg";
 import loupeIcon from "../../img/icons_svg/loupe.svg";
@@ -11,13 +11,16 @@ import trophyIcon from "../../img/icons_svg/trophy.svg";
 import checkedIcon from "../../img/icons_svg/checked.svg";
 import ideaIcon from "../../img/icons_svg/idea.svg";
 import brushIcon from "../../img/icons_svg/paint-brush.svg";
-// Styles
+// Constants
+import { PRIMARY_COLOR, PRIMARY_COLOR_DARK } from "../../styles/constants";
+
+
 const ProsDiv = styled.div`
   width: 100%;
   height: auto;
   margin: 0 0 -4px 0;
   padding: 0 0 0 0;
-  background: linear-gradient(to right, #007cc2 0%, #0e70ae 100%);
+  background-color: #f7f7f7;
 `;
 
 const ProsBox = styled.div`
@@ -25,7 +28,6 @@ const ProsBox = styled.div`
   padding: 7em 15% 3em 15%;
   width: 100%;
   height: auto;
-  border-radius: 50px 50px 0 0;
 `;
 
 const ProsTitle = styled.h2`
@@ -51,20 +53,16 @@ const ProsContainer = styled.div`
   }
 `;
 
-const WaveImg = styled.img`
-  min-width: 100%;
-  position: relative;
-  background: #f7f7f7;
-  max-height: 10%;
-  margin: -5px 0;
-`;
-
 const UnderLine = styled.div`
   position: relative;
   width: 100px;
   height: 5px;
   border-radius: 10px;
-  background: linear-gradient(to right, #66c4ff, #4fbcff);
+  background: linear-gradient(
+    to right,
+    ${PRIMARY_COLOR},
+    ${PRIMARY_COLOR_DARK}
+  );
   z-index: 10;
 `;
 
@@ -116,7 +114,7 @@ export default function Pros() {
           />
         </ProsContainer>
       </ProsBox>
-      <WaveImg src={TopWave} alt="wave for transition" />
+      <WaveTopPink2 />
     </ProsDiv>
   );
 }

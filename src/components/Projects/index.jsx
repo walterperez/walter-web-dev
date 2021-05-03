@@ -25,6 +25,8 @@ import iconHeroku from "../../img/icons_tools/heroku.png";
 import iconFirebase from "../../img/icons_tools/firebase.png";
 import iconCordova from "../../img/icons_tools/Cordova.png";
 import iconTs from "../../img/icons_tools/ts.jpg";
+// Constants
+import { PRIMARY_COLOR, PRIMARY_COLOR_DARK } from "../../styles/constants";
 
 const ProjectsMainDiv = styled.div`
   background-color: #f7f7f7;
@@ -74,7 +76,11 @@ const UnderLine = styled.div`
   width: 100px;
   height: 5px;
   border-radius: 10px;
-  background: linear-gradient(to right, #4cb5f5, #9fd7f9);
+  background: linear-gradient(
+    to right,
+    ${PRIMARY_COLOR_DARK},
+    ${PRIMARY_COLOR}
+  );
   z-index: 10;
 `;
 
