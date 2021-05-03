@@ -90,13 +90,15 @@ export default function About() {
         <ProfileDescription>
           <TitleAbout>Walter Perez</TitleAbout>
           <p>
-            I am a self-taught web developer, and just graduated in an intensive full stack web
-            development boot camp at Kodiri.com. For the last year I have developed with JavaScript,
-            React.js, Redux, Node, Express, HTML, CSS and others web technologies. I am highly
-            motivated, continuously improving my skills daily. I am enthusiastic, reliable and I can
-            work under pressure due to my background in customer service management roles. My
-            passion for working hard and to a high standard in varied environments and companies of
-            different sizes, has helped me to excel in my career.
+            I am a self-taught web developer and I've been developing products
+            for almost 2 years using web technologies like JavaScript, React.js,
+            Redux, Node, Koa, Flow JS, Next JS, Gatsby, HTML, CSS and other web
+            technologies. I am highly motivated, continuously improving my
+            skills daily. I am enthusiastic, reliable and I can work under
+            pressure due to my background in customer service management roles.
+            My passion for working hard and to a high standard in varied
+            environments and companies of different sizes has helped me to excel
+            in my career.
           </p>
           <Sign src={signSVG} />
         </ProfileDescription>

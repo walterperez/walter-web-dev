@@ -68,9 +68,9 @@ export const BOOKS_HEADER = BLACK;
 export const BOOKS_BACKGROUND = WHITE;
 
 // Footer
-export const FOOTER_BACKGROUND = PRIMARY_COLOR;
+export const FOOTER_BACKGROUND = THIRD_COLOR;
 export const FOOTER_FONTS = WHITE;
 
 // Contact Icons
-export const CONTACT_ICONS_COLOR_1 = SECCONDARY_COLOR;
+export const CONTACT_ICONS_COLOR_1 = PRIMARY_COLOR;
 export const CONTACT_ICONS_COLOR_2 = WHITE;
